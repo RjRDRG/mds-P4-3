@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__z-nAA2SEeujq4q3EywG0A" name="common"/>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__z-nAA2SEeujq4q3EywG0A" name="common">
+  <packagedElement xmi:type="uml:Package" xmi:id="_F_BjoBe9Eeu4U_ooFJEV6A" name="Package1">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_khMsgBe9Eeu4U_ooFJEV6A" name="Login">
+      <extend xmi:type="uml:Extend" xmi:id="_yLIJEBfBEeu4U_ooFJEV6A" extendedCase="_gMXS4BfAEeu4U_ooFJEV6A" extensionLocation="_yLIwIBfBEeu4U_ooFJEV6A"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_qndjUBfBEeu4U_ooFJEV6A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mS4FgBe9Eeu4U_ooFJEV6A" name="Request a ride"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7m-8UBe9Eeu4U_ooFJEV6A" name="Track a driver"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QPc1IBe-Eeu4U_ooFJEV6A" name="Payment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3aLIMBe-Eeu4U_ooFJEV6A" name="Choose restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SLYg4Be_Eeu4U_ooFJEV6A" name="Open UberEats App">
+      <include xmi:type="uml:Include" xmi:id="_2FRqcBfBEeu4U_ooFJEV6A" addition="_gMXS4BfAEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qaHVwBe_Eeu4U_ooFJEV6A" name="Open UberRide App">
+      <include xmi:type="uml:Include" xmi:id="_sb1rABfBEeu4U_ooFJEV6A" addition="_gMXS4BfAEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tik7gBe_Eeu4U_ooFJEV6A" name="Open UberFreight App">
+      <include xmi:type="uml:Include" xmi:id="_mwIagBfDEeu4U_ooFJEV6A" addition="_gMXS4BfAEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gMXS4BfAEeu4U_ooFJEV6A" name="Create an account">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_g0zWcBfBEeu4U_ooFJEV6A" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yLIwIBfBEeu4U_ooFJEV6A" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mG5XoBfAEeu4U_ooFJEV6A" name="Edit account details"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1kXyQBfAEeu4U_ooFJEV6A" name="Allow GPS"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_E_3acBfCEeu4U_ooFJEV6A" name="Checkout">
+      <include xmi:type="uml:Include" xmi:id="_oPk-kBfEEeu4U_ooFJEV6A" addition="_euXuEBfEEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_AdukoBfFEeu4U_ooFJEV6A" addition="_0R_AgBfEEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_rpMwUBfFEeu4U_ooFJEV6A" addition="_QPc1IBe-Eeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Or4z0BfCEeu4U_ooFJEV6A" name="Order Food">
+      <include xmi:type="uml:Include" xmi:id="_jv15UBfDEeu4U_ooFJEV6A" addition="_3aLIMBe-Eeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_yJe4YBfDEeu4U_ooFJEV6A" addition="_E_3acBfCEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_CCf_gBfEEeu4U_ooFJEV6A" addition="_9MBYwBfDEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_R-gJMBfEEeu4U_ooFJEV6A" addition="_M7MnYBfEEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9MBYwBfDEeu4U_ooFJEV6A" name="View menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M7MnYBfEEeu4U_ooFJEV6A" name="Add item to basket"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_euXuEBfEEeu4U_ooFJEV6A" name="Enter address "/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0R_AgBfEEeu4U_ooFJEV6A" name="Choose a delivery method"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_W7mqcBfGEeu4U_ooFJEV6A" name="Search restaurants"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_x1IRoBfGEeu4U_ooFJEV6A" name="Display promontion/annoucement"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_46CpYBfHEeu4U_ooFJEV6A" name="Open UberEats for Restaurants App">
+      <include xmi:type="uml:Include" xmi:id="_J_JwMBfIEeu4U_ooFJEV6A" addition="_gMXS4BfAEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_aNoxABfIEeu4U_ooFJEV6A" name="Register restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k1RooBfJEeu4U_ooFJEV6A" name="Accept customer order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Ps4dIBfKEeu4U_ooFJEV6A" name="Update order status"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oA8d8BfKEeu4U_ooFJEV6A" name="Edit menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AR6HcBfLEeu4U_ooFJEV6A" name="Adjust item availabilty"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_V06eQBe9Eeu4U_ooFJEV6A" name="Client"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gBmicBfCEeu4U_ooFJEV6A" name="UberRide Client"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_iYikoBfCEeu4U_ooFJEV6A" name="UberFreight Client"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_j1ylwBfCEeu4U_ooFJEV6A" name="UberEats Client">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SZ5Z0BfGEeu4U_ooFJEV6A" general="_V06eQBe9Eeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9sL8ABfCEeu4U_ooFJEV6A" memberEnd="_9sRbkBfCEeu4U_ooFJEV6A _9sT30BfCEeu4U_ooFJEV6A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9sO_UBfCEeu4U_ooFJEV6A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9sPmYBfCEeu4U_ooFJEV6A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9sRbkBfCEeu4U_ooFJEV6A" name="order food" type="_Or4z0BfCEeu4U_ooFJEV6A" association="_9sL8ABfCEeu4U_ooFJEV6A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9sT30BfCEeu4U_ooFJEV6A" name="ubereats client" type="_j1ylwBfCEeu4U_ooFJEV6A" association="_9sL8ABfCEeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_axJgABfDEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cn8pkBfDEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eLv-oBfDEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gkNq0BfDEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tAL78BfGEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HKZmEBfHEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_I-4bcBfHEeu4U_ooFJEV6A" name="Restaurant Manager"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UBJ2EBfHEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NcHmUBfIEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hL7Y0BfIEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xvHMYBfKEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3oqZsBfKEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6bqFwBfKEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GYu7wBfLEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ryY50BfLEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6CZbwBfLEeu4U_ooFJEV6A"/>
+</uml:Package>
