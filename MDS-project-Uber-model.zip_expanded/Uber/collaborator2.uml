@@ -112,6 +112,7 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_oLclUBfsEeu4U_ooFJEV6A" name="Contact delivery partner"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_wyVtMBftEeu4U_ooFJEV6A" name="Edit advertisements and promotions"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ATpe8BfuEeu4U_ooFJEV6A" name="Show annoucements and advertisements"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Q8RBkBfvEeu4U_ooFJEV6A" name="Send alert"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_Vu7osBfWEeu4U_ooFJEV6A" name="UberEats Client">
     <generalization xmi:type="uml:Generalization" xmi:id="_Vu7osRfWEeu4U_ooFJEV6A">
@@ -167,4 +168,5 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_Lvg6wBftEeu4U_ooFJEV6A" name="User"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_921eQBftEeu4U_ooFJEV6A"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_KtSzUBfuEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WuMj8BfvEeu4U_ooFJEV6A"/>
 </uml:Package>
