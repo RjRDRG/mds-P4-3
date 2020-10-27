@@ -6,4 +6,165 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_R-A70BfWEeu4U_ooFJEV6A" name="UberEats">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dZfgoBfWEeu4U_ooFJEV6A" name="Display promontion/annoucement"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dZgHsBfWEeu4U_ooFJEV6A" name="Search restaurants"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5d--wBfZEeu4U_ooFJEV6A" name="View menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5d--xRfZEeu4U_ooFJEV6A" name="Add item to basket"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5d--xhfZEeu4U_ooFJEV6A" name="Choose restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8hAq4RfZEeu4U_ooFJEV6A" name="Choose a delivery method"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8hAq4BfZEeu4U_ooFJEV6A" name="Payment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8hBR8BfZEeu4U_ooFJEV6A" name="Enter address "/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_iO99oBfdEeu4U_ooFJEV6A" name="Open UberEats App">
+      <include xmi:type="uml:Include" xmi:id="_iO99oRfdEeu4U_ooFJEV6A">
+        <addition xmi:type="uml:UseCase" href="common.uml#_gMXS4BfAEeu4U_ooFJEV6A"/>
+      </include>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mtc7IhfdEeu4U_ooFJEV6A" name="Adjust item availabilty"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mtcUEBfdEeu4U_ooFJEV6A" name="Open UberEats for Restaurants App">
+      <include xmi:type="uml:Include" xmi:id="_mtcUERfdEeu4U_ooFJEV6A">
+        <addition xmi:type="uml:UseCase" href="common.uml#_gMXS4BfAEeu4U_ooFJEV6A"/>
+      </include>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mtc7IxfdEeu4U_ooFJEV6A" name="Update order status">
+      <generalization xmi:type="uml:Generalization" xmi:id="_mtc7JBfdEeu4U_ooFJEV6A">
+        <general xmi:type="uml:UseCase" href="common.uml#_kH1XABfNEeu4U_ooFJEV6A"/>
+      </generalization>
+      <generalization xmi:type="uml:Generalization" xmi:id="_mtc7JRfdEeu4U_ooFJEV6A">
+        <general xmi:type="uml:UseCase" href="common.uml#_mPkfkBfNEeu4U_ooFJEV6A"/>
+      </generalization>
+      <generalization xmi:type="uml:Generalization" xmi:id="_mtc7JhfdEeu4U_ooFJEV6A">
+        <general xmi:type="uml:UseCase" href="common.uml#_YcxzMBfPEeu4U_ooFJEV6A"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mtc7IBfdEeu4U_ooFJEV6A" name="Accept customer order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FFoTIBfhEeu4U_ooFJEV6A" name="Open UberDriver App">
+      <include xmi:type="uml:Include" xmi:id="_FFoTIRfhEeu4U_ooFJEV6A">
+        <addition xmi:type="uml:UseCase" href="common.uml#_gMXS4BfAEeu4U_ooFJEV6A"/>
+      </include>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FFoTIhfhEeu4U_ooFJEV6A" name="Show order">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FFoTIxfhEeu4U_ooFJEV6A" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_BiV9IRfiEeu4U_ooFJEV6A" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FFoTJBfhEeu4U_ooFJEV6A" name="Edit delivery region"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jO3-oBfhEeu4U_ooFJEV6A" name="Mark order as ready for pickup">
+      <generalization xmi:type="uml:Generalization" xmi:id="_j5r_wBftEeu4U_ooFJEV6A" general="_mtc7IxfdEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jO3-oRfhEeu4U_ooFJEV6A" name="Mark order as in progress">
+      <generalization xmi:type="uml:Generalization" xmi:id="_iYBYsBftEeu4U_ooFJEV6A" general="_mtc7IxfdEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jO3-ohfhEeu4U_ooFJEV6A" name="Mark order as in transit">
+      <generalization xmi:type="uml:Generalization" xmi:id="_k2rMcBftEeu4U_ooFJEV6A" general="_mtc7IxfdEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7Kb_4BfhEeu4U_ooFJEV6A" name="Accept order">
+      <extend xmi:type="uml:Extend" xmi:id="_7Kb_4RfhEeu4U_ooFJEV6A">
+        <extendedCase xmi:type="uml:UseCase" href="common.uml#_LfB4cBfREeu4U_ooFJEV6A"/>
+        <extensionLocation xmi:type="uml:ExtensionPoint" href="common.uml#_tiVJQRfSEeu4U_ooFJEV6A"/>
+      </extend>
+      <extend xmi:type="uml:Extend" xmi:id="_BiV9IBfiEeu4U_ooFJEV6A" extendedCase="_FFoTIhfhEeu4U_ooFJEV6A" extensionLocation="_BiV9IRfiEeu4U_ooFJEV6A"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LPKZARfoEeu4U_ooFJEV6A" name="ExtensionPoint3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OvdesBfiEeu4U_ooFJEV6A" name="Track order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gw3OoBfiEeu4U_ooFJEV6A" name="Checkout">
+      <include xmi:type="uml:Include" xmi:id="_yYo9oBfiEeu4U_ooFJEV6A" addition="_8hBR8BfZEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_0h0QoBfiEeu4U_ooFJEV6A" addition="_8hAq4RfZEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_5lzH4BfiEeu4U_ooFJEV6A" addition="_8hAq4BfZEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_t7lHABfjEeu4U_ooFJEV6A" name="Order food">
+      <include xmi:type="uml:Include" xmi:id="_yvhXIBfjEeu4U_ooFJEV6A" addition="_5d--xhfZEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_053HwBfjEeu4U_ooFJEV6A" addition="_5d--wBfZEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_2rKGQBfjEeu4U_ooFJEV6A" addition="_5d--xRfZEeu4U_ooFJEV6A"/>
+      <include xmi:type="uml:Include" xmi:id="_4s5UgBfjEeu4U_ooFJEV6A" addition="_gw3OoBfiEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_obhiUBfkEeu4U_ooFJEV6A" name="Consult earnings"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KMmasBfmEeu4U_ooFJEV6A" name="Open UberEats Manager App"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_q8le8BfmEeu4U_ooFJEV6A" name="Register restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_xI7scBfmEeu4U_ooFJEV6A" name="Edit restaurant menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2G6pYBfmEeu4U_ooFJEV6A" name="Post a review"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZWBbcBfnEeu4U_ooFJEV6A" name="Monitor restaurant alerts"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eiwmEBfnEeu4U_ooFJEV6A" name="Reply to customer reviews"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_u52wUBfnEeu4U_ooFJEV6A" name="Display restaurant statistics"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7cE6wBfnEeu4U_ooFJEV6A" name="Consult pick-up delivery route">
+      <extend xmi:type="uml:Extend" xmi:id="_LPKZABfoEeu4U_ooFJEV6A" extendedCase="_7Kb_4BfhEeu4U_ooFJEV6A" extensionLocation="_LPKZARfoEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_im4tYBfoEeu4U_ooFJEV6A" name="Contact client"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_77iBcBfoEeu4U_ooFJEV6A" name="Find orders"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eMV_QBfpEeu4U_ooFJEV6A" name="Consult order status"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_15Fr8BfqEeu4U_ooFJEV6A" name="Show order pickup details">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZJxLUBfrEeu4U_ooFJEV6A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__UvuEBfqEeu4U_ooFJEV6A" name="Edit order pickup details"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UM_IQBfrEeu4U_ooFJEV6A" name="Start delivery">
+      <extend xmi:type="uml:Extend" xmi:id="_ZJwkQBfrEeu4U_ooFJEV6A" extendedCase="_15Fr8BfqEeu4U_ooFJEV6A" extensionLocation="_ZJxLUBfrEeu4U_ooFJEV6A"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_k2kwsBfrEeu4U_ooFJEV6A" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fkAq4BfrEeu4U_ooFJEV6A" name="Consult drop-off delivery route">
+      <extend xmi:type="uml:Extend" xmi:id="_k2kJoBfrEeu4U_ooFJEV6A" extendedCase="_UM_IQBfrEeu4U_ooFJEV6A" extensionLocation="_k2kwsBfrEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vM32IBfrEeu4U_ooFJEV6A" name="End delivery">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_BBDCYBfsEeu4U_ooFJEV6A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9acvIBfrEeu4U_ooFJEV6A" name="Post feedback">
+      <extend xmi:type="uml:Extend" xmi:id="_BBCbUBfsEeu4U_ooFJEV6A" extendedCase="_vM32IBfrEeu4U_ooFJEV6A" extensionLocation="_BBDCYBfsEeu4U_ooFJEV6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LvRfoBfsEeu4U_ooFJEV6A" name="Report a delivery problem"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oLclUBfsEeu4U_ooFJEV6A" name="Contact delivery partner"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wyVtMBftEeu4U_ooFJEV6A" name="Edit advertisements and promotions"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ATpe8BfuEeu4U_ooFJEV6A" name="Show annoucements and advertisements"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Vu7osBfWEeu4U_ooFJEV6A" name="UberEats Client">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Vu7osRfWEeu4U_ooFJEV6A">
+      <general xmi:type="uml:Actor" href="common.uml#_V06eQBe9Eeu4U_ooFJEV6A"/>
+    </generalization>
+    <generalization xmi:type="uml:Generalization" xmi:id="_LWOAEBfkEeu4U_ooFJEV6A" general="_I0GBkBfkEeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K5Gx0BfaEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_k4kkgBfaEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oLJvkBfaEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EZ6ZcBfdEeu4U_ooFJEV6A" name="Restaurant Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PZdc8BftEeu4U_ooFJEV6A" general="_Lvg6wBftEeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_j1MUkBfdEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DKVWABffEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EkN6EBffEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ke-oUBffEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ph8y8BffEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q9WZ8BffEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VlseEBffEeu4U_ooFJEV6A" name="Delivery Partner">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cY8hQBfkEeu4U_ooFJEV6A" general="_SXax8BfkEeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VOXRQBfhEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_X3EY4BfhEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Z0cEgBfhEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-_cGEBfiEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wmGMgBfjEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_I0GBkBfkEeu4U_ooFJEV6A" name="User"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_SXax8BfkEeu4U_ooFJEV6A" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ueSWABfkEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SI7NgBflEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ITztEBfmEeu4U_ooFJEV6A" name="Restaurant Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Eg5X8BftEeu4U_ooFJEV6A" general="_EZ6ZcBfdEeu4U_ooFJEV6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pv1_ABfmEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wrOcwBfmEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ew-qEBfnEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_l1un8BfoEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GnRLYBfpEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ofSOsBfpEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uG4JUBfpEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WcOccBfqEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-EfnIBfqEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UM-EsBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZNCFQBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iJEzMBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jTnTsBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_k7epYBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mQQD8BfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sVrKEBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zgZEUBfsEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LGPUQBftEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Lvg6wBftEeu4U_ooFJEV6A" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_921eQBftEeu4U_ooFJEV6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KtSzUBfuEeu4U_ooFJEV6A"/>
 </uml:Package>
