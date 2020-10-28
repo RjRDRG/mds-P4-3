@@ -4,22 +4,6 @@
     <children xmi:type="notation:Shape" xmi:id="_uztWcBkjEeuMYZfga_fWSg" type="Package_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_uz0rMBkjEeuMYZfga_fWSg" type="Package_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_uz0rMRkjEeuMYZfga_fWSg" type="Package_PackagedElementCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_My344BkkEeuMYZfga_fWSg" type="Actor_Shape_CN">
-          <children xmi:type="notation:DecorationNode" xmi:id="_My4f8BkkEeuMYZfga_fWSg" type="Actor_NameLabel_CN">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_My4f8RkkEeuMYZfga_fWSg" y="15"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_My4f8hkkEeuMYZfga_fWSg" type="Actor_StereotypeLabel_CN">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_My4f8xkkEeuMYZfga_fWSg" x="20" y="100"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_My4f9BkkEeuMYZfga_fWSg" type="Actor_QualifiedNameLabel_CN">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_My4f9RkkEeuMYZfga_fWSg" x="20" y="80"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_My4f9hkkEeuMYZfga_fWSg" type="Actor_FloatingNameLabel_CN">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_My4f9xkkEeuMYZfga_fWSg" y="15"/>
-          </children>
-          <element xmi:type="uml:Actor" href="collaborator1.uml#_My2qwBkkEeuMYZfga_fWSg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_My344RkkEeuMYZfga_fWSg" x="-232" y="528"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_Q6CbMBknEeuMYZfga_fWSg" type="UseCase_Shape_CN">
           <children xmi:type="notation:DecorationNode" xmi:id="_Q6DCQBknEeuMYZfga_fWSg" type="UseCase_NameLabel_CN"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_Q6DCQRknEeuMYZfga_fWSg" type="UseCase_FloatingNameLabel_CN">
@@ -543,7 +527,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uz0rMhkjEeuMYZfga_fWSg"/>
       </children>
       <element xmi:type="uml:Package" href="collaborator1.uml#_uytQ4BkjEeuMYZfga_fWSg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uztWcRkjEeuMYZfga_fWSg" x="460" y="80" width="1320" height="1020"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uztWcRkjEeuMYZfga_fWSg" x="460" y="80" width="1300" height="1020"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_x5MOwBklEeuMYZfga_fWSg" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_x5MOwhklEeuMYZfga_fWSg" type="Actor_NameLabel">

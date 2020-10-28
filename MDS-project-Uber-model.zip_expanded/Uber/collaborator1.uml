@@ -55,7 +55,6 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBhkjEeuMYZfga_fWSg" name="Update order status"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBxkjEeuMYZfga_fWSg" name="Edit menu"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRCBkjEeuMYZfga_fWSg" name="Adjust item availabilty"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_My2qwBkkEeuMYZfga_fWSg" name="Client"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Q5-w0BknEeuMYZfga_fWSg" name="Open UberFreight App"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_EPLcsBkoEeuMYZfga_fWSg" name="View Available Loads">
       <ownedComment xmi:type="uml:Comment" xmi:id="_DJfP4Bk8EeuMYZfga_fWSg">
