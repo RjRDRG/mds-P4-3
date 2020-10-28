@@ -1,10 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LC4vcA2TEeujq4q3EywG0A" name="collaborator3">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LC4vcA2TEeujq4q3EywG0A" name="collaborator3">
   <packagedElement xmi:type="uml:Package" xmi:id="_LWH0gA2TEeujq4q3EywG0A" name="Package3"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="__6WtEA2YEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_BshOQA2ZEeujq4q3EywG0A" name="Activity3"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_MQgxcA2ZEeujq4q3EywG0A" name="Interaction4"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_PlMOQA2ZEeujq4q3EywG0A" name="StateMachine5">
     <region xmi:type="uml:Region" xmi:id="_QViGEA2ZEeujq4q3EywG0A" name="Region1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_k6HwQBklEeuJU-Q5HyAB_A" name="Uber ride">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G8xWQBkmEeuJU-Q5HyAB_A" name="Open Uber app"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_apEhwBkmEeuJU-Q5HyAB_A" name="Set a destination"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fOVcsBkmEeuJU-Q5HyAB_A" name="Request a ride"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hk_LABkmEeuJU-Q5HyAB_A" name="Review driver"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nOKaABkmEeuJU-Q5HyAB_A" name="Choose a car"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ocHa4BkmEeuJU-Q5HyAB_A" name="Confirm cost"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_wmmwEBkmEeuJU-Q5HyAB_A" name="&lt;&lt;include>>" client="_fOVcsBkmEeuJU-Q5HyAB_A" supplier="_nOKaABkmEeuJU-Q5HyAB_A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_46RPYBkmEeuJU-Q5HyAB_A" name="&lt;&lt;include>>" client="_fOVcsBkmEeuJU-Q5HyAB_A" supplier="_ocHa4BkmEeuJU-Q5HyAB_A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MlomwBknEeuJU-Q5HyAB_A" name="Payment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_PaKj4BknEeuJU-Q5HyAB_A" name="&lt;&lt;include>>" client="_ocHa4BkmEeuJU-Q5HyAB_A" supplier="_MlomwBknEeuJU-Q5HyAB_A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_T9QUkBknEeuJU-Q5HyAB_A" name="Track driver"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_V4Sd4BknEeuJU-Q5HyAB_A" name="&lt;&lt;include>>" client="_fOVcsBkmEeuJU-Q5HyAB_A" supplier="_T9QUkBknEeuJU-Q5HyAB_A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qgpMgBkoEeuJU-Q5HyAB_A" name="Display driver rating"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zGg2IBkoEeuJU-Q5HyAB_A" name="Select prefered destination"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1pmd8BkoEeuJU-Q5HyAB_A" name="Open uber driver app"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8acfoBkoEeuJU-Q5HyAB_A" name="Accept rides"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AZXMQBkpEeuJU-Q5HyAB_A" name="Access statistics"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GKmyIBkpEeuJU-Q5HyAB_A" name="Withdraw winnings"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YLTXcBkpEeuJU-Q5HyAB_A" name="Upload personal doccuments"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cC0bkBkpEeuJU-Q5HyAB_A" name="Change car model"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__1TLABkqEeuJU-Q5HyAB_A" name="End ride"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_tXXCUBklEeuJU-Q5HyAB_A" name="User"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_y4UJcBklEeuJU-Q5HyAB_A" name="UberRide Client">
+    <generalization xmi:type="uml:Generalization" xmi:id="_AV1egBkmEeuJU-Q5HyAB_A" general="_tXXCUBklEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u5ji8BknEeuJU-Q5HyAB_A" memberEnd="_u5kKAhknEeuJU-Q5HyAB_A _u5kxEBknEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u5kKABknEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u5kKARknEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u5kKAhknEeuJU-Q5HyAB_A" name="open uber app" type="_G8xWQBkmEeuJU-Q5HyAB_A" association="_u5ji8BknEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u5kxEBknEeuJU-Q5HyAB_A" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_u5ji8BknEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vr17gBknEeuJU-Q5HyAB_A" memberEnd="_vr2ikhknEeuJU-Q5HyAB_A _vr3JoBknEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vr2ikBknEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vr2ikRknEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vr2ikhknEeuJU-Q5HyAB_A" name="set a destination" type="_apEhwBkmEeuJU-Q5HyAB_A" association="_vr17gBknEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vr3JoBknEeuJU-Q5HyAB_A" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_vr17gBknEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wPNHQBknEeuJU-Q5HyAB_A" memberEnd="_wPNuURknEeuJU-Q5HyAB_A _wPNuUhknEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wPNHQRknEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wPNuUBknEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wPNuURknEeuJU-Q5HyAB_A" name="request a ride" type="_fOVcsBkmEeuJU-Q5HyAB_A" association="_wPNHQBknEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wPNuUhknEeuJU-Q5HyAB_A" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_wPNHQBknEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wtrL8BknEeuJU-Q5HyAB_A" memberEnd="_wtrzAhknEeuJU-Q5HyAB_A _wtrzAxknEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wtrzABknEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wtrzARknEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wtrzAhknEeuJU-Q5HyAB_A" name="review driver" type="_hk_LABkmEeuJU-Q5HyAB_A" association="_wtrL8BknEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wtrzAxknEeuJU-Q5HyAB_A" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_wtrL8BknEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_awaN8BkoEeuJU-Q5HyAB_A" name="Driver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iFKN8BkoEeuJU-Q5HyAB_A" general="_fe-14BkoEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fe-14BkoEeuJU-Q5HyAB_A" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6YUaYBkpEeuJU-Q5HyAB_A" memberEnd="_6YVBchkpEeuJU-Q5HyAB_A _6YVBcxkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6YVBcBkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6YVBcRkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6YVBchkpEeuJU-Q5HyAB_A" name="driver rating" type="_qgpMgBkoEeuJU-Q5HyAB_A" association="_6YUaYBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6YVBcxkpEeuJU-Q5HyAB_A" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_6YUaYBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7smswBkpEeuJU-Q5HyAB_A" memberEnd="_7snT0hkpEeuJU-Q5HyAB_A _7snT0xkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7snT0BkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7snT0RkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7snT0hkpEeuJU-Q5HyAB_A" name="driver" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_7smswBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7snT0xkpEeuJU-Q5HyAB_A" name="driver rating" type="_qgpMgBkoEeuJU-Q5HyAB_A" association="_7smswBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8UaToBkpEeuJU-Q5HyAB_A" memberEnd="_8Ua6sBkpEeuJU-Q5HyAB_A _8Ua6sRkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8UaToRkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8UaTohkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8Ua6sBkpEeuJU-Q5HyAB_A" type="_7smswBkpEeuJU-Q5HyAB_A" association="_8UaToBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8Ua6sRkpEeuJU-Q5HyAB_A" name="open uber driver app" type="_1pmd8BkoEeuJU-Q5HyAB_A" association="_8UaToBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9OL0QBkpEeuJU-Q5HyAB_A" memberEnd="_9OMbUhkpEeuJU-Q5HyAB_A _9OMbUxkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9OMbUBkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9OMbURkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9OMbUhkpEeuJU-Q5HyAB_A" type="_7smswBkpEeuJU-Q5HyAB_A" association="_9OL0QBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9OMbUxkpEeuJU-Q5HyAB_A" name="select prefered destination" type="_zGg2IBkoEeuJU-Q5HyAB_A" association="_9OL0QBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_98UsoBkpEeuJU-Q5HyAB_A" memberEnd="_98VTsRkpEeuJU-Q5HyAB_A _98VTshkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_98UsoRkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_98VTsBkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_98VTsRkpEeuJU-Q5HyAB_A" name="driver" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_98UsoBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_98VTshkpEeuJU-Q5HyAB_A" name="accept rides" type="_8acfoBkoEeuJU-Q5HyAB_A" association="_98UsoBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-ZUKoBkpEeuJU-Q5HyAB_A" memberEnd="_-ZUxshkpEeuJU-Q5HyAB_A _-ZUxsxkpEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ZUxsBkpEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-ZUxsRkpEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-ZUxshkpEeuJU-Q5HyAB_A" name="driver" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_-ZUKoBkpEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-ZUxsxkpEeuJU-Q5HyAB_A" name="access statistics" type="_AZXMQBkpEeuJU-Q5HyAB_A" association="_-ZUKoBkpEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_D4fJEBkqEeuJU-Q5HyAB_A" memberEnd="_D4fJExkqEeuJU-Q5HyAB_A _D4fJFBkqEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D4fJERkqEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D4fJEhkqEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_D4fJExkqEeuJU-Q5HyAB_A" name="driver" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_D4fJEBkqEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_D4fJFBkqEeuJU-Q5HyAB_A" name="withdraw winnings" type="_GKmyIBkpEeuJU-Q5HyAB_A" association="_D4fJEBkqEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EbV-gBkqEeuJU-Q5HyAB_A" memberEnd="_EbWlkhkqEeuJU-Q5HyAB_A _EbWlkxkqEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EbWlkBkqEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EbWlkRkqEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EbWlkhkqEeuJU-Q5HyAB_A" name="driver" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_EbV-gBkqEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EbWlkxkqEeuJU-Q5HyAB_A" name="upload personal doccuments" type="_YLTXcBkpEeuJU-Q5HyAB_A" association="_EbV-gBkqEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GbWucBkqEeuJU-Q5HyAB_A" memberEnd="_GbXVghkqEeuJU-Q5HyAB_A _GbXVgxkqEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GbXVgBkqEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GbXVgRkqEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GbXVghkqEeuJU-Q5HyAB_A" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_GbWucBkqEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GbXVgxkqEeuJU-Q5HyAB_A" name="change car model" type="_cC0bkBkpEeuJU-Q5HyAB_A" association="_GbWucBkqEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BshLUBkrEeuJU-Q5HyAB_A" memberEnd="_BshyYhkrEeuJU-Q5HyAB_A _BshyYxkrEeuJU-Q5HyAB_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BshyYBkrEeuJU-Q5HyAB_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BshyYRkrEeuJU-Q5HyAB_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BshyYhkrEeuJU-Q5HyAB_A" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_BshLUBkrEeuJU-Q5HyAB_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BshyYxkrEeuJU-Q5HyAB_A" name="end ride" type="__1TLABkqEeuJU-Q5HyAB_A" association="_BshLUBkrEeuJU-Q5HyAB_A"/>
   </packagedElement>
 </uml:Package>
