@@ -58,7 +58,7 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Q5-w0BknEeuMYZfga_fWSg" name="Open UberFreight App"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_EPLcsBkoEeuMYZfga_fWSg" name="View Available Loads">
       <ownedComment xmi:type="uml:Comment" xmi:id="_DJfP4Bk8EeuMYZfga_fWSg">
-        <body>Carrier can view a list of available loads based on current GPS location.</body>
+        <body>A list of available loads based on current GPS location.</body>
       </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_CuPuEBkrEeuMYZfga_fWSg" addition="_ARcmYBkpEeuMYZfga_fWSg"/>
     </packagedElement>
@@ -70,7 +70,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_pSsysBkoEeuMYZfga_fWSg" name="View Active/Completed Loads">
       <ownedComment xmi:type="uml:Comment" xmi:id="_2ZtxoBk7EeuMYZfga_fWSg">
-        <body>Carrier can view a list of their load history.</body>
+        <body>Detailed description submitted.</body>
       </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_Ntr3IBkrEeuMYZfga_fWSg" addition="_ARcmYBkpEeuMYZfga_fWSg"/>
     </packagedElement>
@@ -232,12 +232,6 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_T1VWkBlGEeuMYZfga_fWSg" name="By Rating">
       <generalization xmi:type="uml:Generalization" xmi:id="_bg9lgBlGEeuMYZfga_fWSg" general="_2a4gMBlEEeuMYZfga_fWSg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_eN_ZMBlWEeuLmqNBTLdnJA" name="Submit POD For Delivered Load">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_toQu0BlWEeuLmqNBTLdnJA">
-        <body>Detailed description submitted.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_kRa7QBlWEeuLmqNBTLdnJA" client="_eN_ZMBlWEeuLmqNBTLdnJA" supplier="_pSsysBkoEeuMYZfga_fWSg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_x5LnsBklEeuMYZfga_fWSg" name="UberFreight Client - Carrier">
     <generalization xmi:type="uml:Generalization" xmi:id="_ItdbUBknEeuMYZfga_fWSg" general="_yfXd8BklEeuMYZfga_fWSg"/>
