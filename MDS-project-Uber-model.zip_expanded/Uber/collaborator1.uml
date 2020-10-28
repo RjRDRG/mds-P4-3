@@ -1,9 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
   <packagedElement xmi:type="uml:Activity" xmi:id="_lyDO0A2VEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_uytQ4BkjEeuMYZfga_fWSg" name="UberFreight">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ4RkjEeuMYZfga_fWSg" name="Login">
+      <extend xmi:type="uml:Extend" xmi:id="_uytQ4hkjEeuMYZfga_fWSg" extendedCase="_uytQ7hkjEeuMYZfga_fWSg" extensionLocation="_uytQ8BkjEeuMYZfga_fWSg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uytQ4xkjEeuMYZfga_fWSg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ5BkjEeuMYZfga_fWSg" name="Request a ride"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ5RkjEeuMYZfga_fWSg" name="Track a driver"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ5hkjEeuMYZfga_fWSg" name="Payment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ5xkjEeuMYZfga_fWSg" name="Choose restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ6BkjEeuMYZfga_fWSg" name="Open UberEats App">
+      <include xmi:type="uml:Include" xmi:id="_uytQ6RkjEeuMYZfga_fWSg" addition="_uytQ7hkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ6hkjEeuMYZfga_fWSg" name="Open UberRide App">
+      <include xmi:type="uml:Include" xmi:id="_uytQ6xkjEeuMYZfga_fWSg" addition="_uytQ7hkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ7BkjEeuMYZfga_fWSg" name="Open UberFreight App">
+      <include xmi:type="uml:Include" xmi:id="_uytQ7RkjEeuMYZfga_fWSg" addition="_uytQ7hkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ7hkjEeuMYZfga_fWSg" name="Create an account">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uytQ7xkjEeuMYZfga_fWSg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uytQ8BkjEeuMYZfga_fWSg" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ8RkjEeuMYZfga_fWSg" name="Edit account details"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ8hkjEeuMYZfga_fWSg" name="Allow GPS"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ8xkjEeuMYZfga_fWSg" name="Checkout">
+      <include xmi:type="uml:Include" xmi:id="_uytQ9BkjEeuMYZfga_fWSg" addition="_uytQ_hkjEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_uytQ9RkjEeuMYZfga_fWSg" addition="_uytQ_xkjEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_uytQ9hkjEeuMYZfga_fWSg" addition="_uytQ5hkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ9xkjEeuMYZfga_fWSg" name="Order Food">
+      <include xmi:type="uml:Include" xmi:id="_uytQ-BkjEeuMYZfga_fWSg" addition="_uytQ5xkjEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_uytQ-RkjEeuMYZfga_fWSg" addition="_uytQ8xkjEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_uytQ-hkjEeuMYZfga_fWSg" addition="_uytQ_BkjEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_uytQ-xkjEeuMYZfga_fWSg" addition="_uytQ_RkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ_BkjEeuMYZfga_fWSg" name="View menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ_RkjEeuMYZfga_fWSg" name="Add item to basket"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ_hkjEeuMYZfga_fWSg" name="Enter address "/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytQ_xkjEeuMYZfga_fWSg" name="Choose a delivery method"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRABkjEeuMYZfga_fWSg" name="Search restaurants"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRARkjEeuMYZfga_fWSg" name="Display promontion/annoucement"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRAhkjEeuMYZfga_fWSg" name="Open UberEats for Restaurants App">
+      <include xmi:type="uml:Include" xmi:id="_uytRAxkjEeuMYZfga_fWSg" addition="_uytQ7hkjEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBBkjEeuMYZfga_fWSg" name="Register restaurant"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBRkjEeuMYZfga_fWSg" name="Accept customer order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBhkjEeuMYZfga_fWSg" name="Update order status"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRBxkjEeuMYZfga_fWSg" name="Edit menu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uytRCBkjEeuMYZfga_fWSg" name="Adjust item availabilty"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_My2qwBkkEeuMYZfga_fWSg" name="Client"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Q5-w0BknEeuMYZfga_fWSg" name="Open UberFreight App"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EPLcsBkoEeuMYZfga_fWSg" name="View Available Loads">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DJfP4Bk8EeuMYZfga_fWSg">
+        <body>A list of available loads based on current GPS location.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_CuPuEBkrEeuMYZfga_fWSg" addition="_ARcmYBkpEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PAK6EBkoEeuMYZfga_fWSg" name="Book Load">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SJI7gBk7EeuMYZfga_fWSg">
+        <body>When booking a load, the carrier will be asked about the preferred payment method  (direct deposit or a pre-existing factoring company). Booked loads can be cancelled before pickup.</body>
+      </ownedComment>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_niBNUBkqEeuMYZfga_fWSg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_pSsysBkoEeuMYZfga_fWSg" name="View Active/Completed Loads">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_2ZtxoBk7EeuMYZfga_fWSg">
+        <body>Detailed description submitted.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_Ntr3IBkrEeuMYZfga_fWSg" addition="_ARcmYBkpEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_v4GZYBkoEeuMYZfga_fWSg" name="Filter Available Loads">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FSUdQBk_EeuMYZfga_fWSg">
+        <body>The list of available loads can be filtered.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6Rf2IBkoEeuMYZfga_fWSg" name="View Suggested Loads">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_QjtR8Bk_EeuMYZfga_fWSg">
+        <body>The suggested loads are selected to be convenient and worthwhile to the carrier, based on their load history. The more extensive the load history, the more accurate these suggestions should be.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ARcmYBkpEeuMYZfga_fWSg" name="View Load Details">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uHJXIBk-EeuMYZfga_fWSg">
+        <body>The load details include the pickup and delivery locations, times and dates, carrier rate, commodity to be carried, trailer type, packaging type, weight, and distance.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_cKG54BkqEeuMYZfga_fWSg" addition="_agFBABkqEeuMYZfga_fWSg"/>
+      <include xmi:type="uml:Include" xmi:id="_mz9YABkrEeuMYZfga_fWSg" addition="_dH0p4BkrEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_agFBABkqEeuMYZfga_fWSg" name="Book Reload">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_khHbkBk_EeuMYZfga_fWSg">
+        <body>Reloads are loads that have the delivery location of the last load as their pickup location, thus enabling the carrier to chain loads together.</body>
+      </ownedComment>
+      <extend xmi:type="uml:Extend" xmi:id="_niAmQBkqEeuMYZfga_fWSg" extendedCase="_PAK6EBkoEeuMYZfga_fWSg" extensionLocation="_niBNUBkqEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dH0p4BkrEeuMYZfga_fWSg" name="View Pickup/Delivery Instructions">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_43bNYBk_EeuMYZfga_fWSg">
+        <body>Besides the facility rating, location, amenities and contact, instructions on how to efficiently pickup or deliver loads from the facility are also displayed.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__CdRcBktEeuMYZfga_fWSg" name="By Pickup Location">
+      <generalization xmi:type="uml:Generalization" xmi:id="_LaF8gBkuEeuMYZfga_fWSg" general="_v4GZYBkoEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_B4N9oBkuEeuMYZfga_fWSg" name="By Distance">
+      <generalization xmi:type="uml:Generalization" xmi:id="_MMmXgBkuEeuMYZfga_fWSg" general="_v4GZYBkoEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EAClwBkuEeuMYZfga_fWSg" name="By Delivery Location">
+      <generalization xmi:type="uml:Generalization" xmi:id="_MvzyQBkuEeuMYZfga_fWSg" general="_v4GZYBkoEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GjdkwBkuEeuMYZfga_fWSg" name="By Trailer Type">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NwB5IBkuEeuMYZfga_fWSg" general="_v4GZYBkoEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TQG2gBkuEeuMYZfga_fWSg" name="Sort Available Loads">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_EpmQYBk_EeuMYZfga_fWSg">
+        <body>The list of available loads can be sorted.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oE6FsBkvEeuMYZfga_fWSg" name="By Deadhead">
+      <generalization xmi:type="uml:Generalization" xmi:id="_v9XPsBkvEeuMYZfga_fWSg" general="_TQG2gBkuEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rW1JcBkvEeuMYZfga_fWSg" name="By Rate Per Mile">
+      <generalization xmi:type="uml:Generalization" xmi:id="_w0sgUBkvEeuMYZfga_fWSg" general="_TQG2gBkuEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_teuqEBkvEeuMYZfga_fWSg" name="By Price">
+      <generalization xmi:type="uml:Generalization" xmi:id="_xuNiQBkvEeuMYZfga_fWSg" general="_TQG2gBkuEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uNGL8BkvEeuMYZfga_fWSg" name="By Weight">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1Sux4BkvEeuMYZfga_fWSg" general="_TQG2gBkuEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mC-_UBkxEeuMYZfga_fWSg" name="En Route to Pickup">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_K0BSoBk8EeuMYZfga_fWSg">
+        <body>The user should update their status once en route to the pickup location.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y2yB8BkxEeuMYZfga_fWSg" name="Complete Delivery">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_JvN70Bk-EeuMYZfga_fWSg">
+        <body>Once the load has been delivered, the user should update its status accordingly.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_25KSQBkxEeuMYZfga_fWSg" name="Upload POD">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_VBtjwBk-EeuMYZfga_fWSg">
+        <body>Once the delivery is complete, a clear, legible photograph of the commercial invoice should be taken and uploaded as proof of delivery. Once this has been uploaded and reviewed by the shipper, the load is complete.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9DTgUBkxEeuMYZfga_fWSg" name="Rate Facilities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mLl10Bk-EeuMYZfga_fWSg">
+        <body>Both pickup and delivery facilites can be rated by the carrier, with a star review, as well as a written one.</body>
+      </ownedComment>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_P9Z9YRkzEeuMYZfga_fWSg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GThnIBk1EeuMYZfga_fWSg" client="_TQG2gBkuEeuMYZfga_fWSg" supplier="_EPLcsBkoEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Hl1jkBk1EeuMYZfga_fWSg" client="_v4GZYBkoEeuMYZfga_fWSg" supplier="_EPLcsBkoEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_MqNcYBk1EeuMYZfga_fWSg" client="_6Rf2IBkoEeuMYZfga_fWSg" supplier="_EPLcsBkoEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_bHnrsBk2EeuMYZfga_fWSg" client="_mC-_UBkxEeuMYZfga_fWSg" supplier="_PAK6EBkoEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_b-JrEBk2EeuMYZfga_fWSg" client="_y2yB8BkxEeuMYZfga_fWSg" supplier="_mC-_UBkxEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_dZV2sBk2EeuMYZfga_fWSg" client="_25KSQBkxEeuMYZfga_fWSg" supplier="_y2yB8BkxEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_eKkfUBk2EeuMYZfga_fWSg" client="_9DTgUBkxEeuMYZfga_fWSg" supplier="_25KSQBkxEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Sms2sBk6EeuMYZfga_fWSg" name="Post Truck">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_1GnyEBk7EeuMYZfga_fWSg">
+        <body>Detailed description submitted.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YIRIMBlCEeuMYZfga_fWSg" name="Open UberFreight Shipper Platform"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_bvDBoBlCEeuMYZfga_fWSg" name="Create Shipment">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mEDw0BlGEeuMYZfga_fWSg">
+        <body>The shipper can post a shipment, with details including details including the pickup and delivery locations, times and dates, carrier rate, commodity to be carried, trailer type, packaging type, and weight.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fhUZYBlCEeuMYZfga_fWSg" name="View Shipments">
+      <ownedComment xmi:type="uml:Comment" xmi:id="__1I-sBlFEeuMYZfga_fWSg">
+        <body>The shipper can view a list of all their shipments.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qyzUsBlCEeuMYZfga_fWSg" name="Track Shipment">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ioBHwBlGEeuMYZfga_fWSg">
+        <body>The shipper can track the journey of their shipments.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QQ_NcBlDEeuMYZfga_fWSg" name="Filter Shipments">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_BMwR4BlGEeuMYZfga_fWSg">
+        <body>The list can be filtered.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZX7j0BlDEeuMYZfga_fWSg" name="By Status">
+      <generalization xmi:type="uml:Generalization" xmi:id="_jeHJoBlDEeuMYZfga_fWSg" general="_QQ_NcBlDEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hrWykBlDEeuMYZfga_fWSg" name="Sort Shipments">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_CG4X0BlGEeuMYZfga_fWSg">
+        <body>The list can be sorted.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kOuuQBlDEeuMYZfga_fWSg" name="By Status">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NLWcwBlEEeuMYZfga_fWSg" general="_hrWykBlDEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BFRbwBlEEeuMYZfga_fWSg" name="By Pickup Date/Time">
+      <generalization xmi:type="uml:Generalization" xmi:id="_OfPGgBlEEeuMYZfga_fWSg" general="_hrWykBlDEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FA7ZABlEEeuMYZfga_fWSg" name="By Delivery Date/Time">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Pw47oBlEEeuMYZfga_fWSg" general="_hrWykBlDEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_R7H-kBlEEeuMYZfga_fWSg" client="_QQ_NcBlDEeuMYZfga_fWSg" supplier="_fhUZYBlCEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_S6tzUBlEEeuMYZfga_fWSg" client="_hrWykBlDEeuMYZfga_fWSg" supplier="_fhUZYBlCEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_smZHUBlEEeuMYZfga_fWSg" name="View Facilities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_D7-RMBlGEeuMYZfga_fWSg">
+        <body>The shipper can view a list of all their facilities.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_t85nQBlEEeuMYZfga_fWSg" name="Register Facility">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fPlzYBlGEeuMYZfga_fWSg">
+        <body>The shipper can register their shipping facilites, with details including location, amenities, contacts, and instructions on how to efficiently pickup or deliver loads from each facility.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2a4gMBlEEeuMYZfga_fWSg" name="Sort Facilities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FDsuQBlGEeuMYZfga_fWSg">
+        <body>The list can be sorted.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="__ZRXgBlEEeuMYZfga_fWSg" client="_2a4gMBlEEeuMYZfga_fWSg" supplier="_smZHUBlEEeuMYZfga_fWSg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OORAYBlGEeuMYZfga_fWSg" name="By Name">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ZUTgsBlGEeuMYZfga_fWSg" general="_2a4gMBlEEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_O6vr4BlGEeuMYZfga_fWSg" name="By Location">
+      <generalization xmi:type="uml:Generalization" xmi:id="_YO0fUBlGEeuMYZfga_fWSg" general="_2a4gMBlEEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RmHtABlGEeuMYZfga_fWSg" name="By Total Pickups">
+      <generalization xmi:type="uml:Generalization" xmi:id="_amgIYBlGEeuMYZfga_fWSg" general="_2a4gMBlEEeuMYZfga_fWSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_T1VWkBlGEeuMYZfga_fWSg" name="By Rating">
+      <generalization xmi:type="uml:Generalization" xmi:id="_bg9lgBlGEeuMYZfga_fWSg" general="_2a4gMBlEEeuMYZfga_fWSg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_x5LnsBklEeuMYZfga_fWSg" name="UberFreight Client - Carrier">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ItdbUBknEeuMYZfga_fWSg" general="_yfXd8BklEeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yfXd8BklEeuMYZfga_fWSg" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_riRWsBkqEeuMYZfga_fWSg" memberEnd="_riSk0hkqEeuMYZfga_fWSg _riTL4BkqEeuMYZfga_fWSg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_riSk0BkqEeuMYZfga_fWSg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_riSk0RkqEeuMYZfga_fWSg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_riSk0hkqEeuMYZfga_fWSg" name="open uberfreight app" type="_Q5-w0BknEeuMYZfga_fWSg" association="_riRWsBkqEeuMYZfga_fWSg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_riTL4BkqEeuMYZfga_fWSg" name="userfreight client" type="_x5LnsBklEeuMYZfga_fWSg" association="_riRWsBkqEeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sFFI0BkqEeuMYZfga_fWSg" memberEnd="_sFFv4hkqEeuMYZfga_fWSg _sFFv4xkqEeuMYZfga_fWSg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sFFv4BkqEeuMYZfga_fWSg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sFFv4RkqEeuMYZfga_fWSg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sFFv4hkqEeuMYZfga_fWSg" name="view available loads" type="_EPLcsBkoEeuMYZfga_fWSg" association="_sFFI0BkqEeuMYZfga_fWSg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sFFv4xkqEeuMYZfga_fWSg" name="userfreight client" type="_x5LnsBklEeuMYZfga_fWSg" association="_sFFI0BkqEeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ytTkkBkrEeuMYZfga_fWSg" memberEnd="_ytULohkrEeuMYZfga_fWSg _ytULoxkrEeuMYZfga_fWSg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ytULoBkrEeuMYZfga_fWSg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytULoRkrEeuMYZfga_fWSg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ytULohkrEeuMYZfga_fWSg" name="view active/completed loads" type="_pSsysBkoEeuMYZfga_fWSg" association="_ytTkkBkrEeuMYZfga_fWSg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ytULoxkrEeuMYZfga_fWSg" name="userfreight client" type="_x5LnsBklEeuMYZfga_fWSg" association="_ytTkkBkrEeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s_ZlkBk2EeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hGe6ABk6EeuMYZfga_fWSg" memberEnd="_hGe6Axk6EeuMYZfga_fWSg _hGe6BBk6EeuMYZfga_fWSg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hGe6ARk6EeuMYZfga_fWSg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hGe6Ahk6EeuMYZfga_fWSg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hGe6Axk6EeuMYZfga_fWSg" name="post truck" type="_Sms2sBk6EeuMYZfga_fWSg" association="_hGe6ABk6EeuMYZfga_fWSg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hGe6BBk6EeuMYZfga_fWSg" name="userfreight client" type="_x5LnsBklEeuMYZfga_fWSg" association="_hGe6ABk6EeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PjlKUBlCEeuMYZfga_fWSg" name="UberFreight Client - Shipper">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6_oL0BlGEeuMYZfga_fWSg" general="_yfXd8BklEeuMYZfga_fWSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Vk_oQBlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YvRL4BlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aZTr0BlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c-0VgBlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yPZ-QBlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zdTUwBlEEeuMYZfga_fWSg"/>
 </uml:Package>
