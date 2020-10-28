@@ -29,6 +29,11 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_YLTXcBkpEeuJU-Q5HyAB_A" name="Upload personal doccuments"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_cC0bkBkpEeuJU-Q5HyAB_A" name="Change car model"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="__1TLABkqEeuJU-Q5HyAB_A" name="End ride"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MEySwBlDEeuG9cCZF6xdDw" name="Display available bycicles on a map"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RGhuUBlDEeuG9cCZF6xdDw" name="Display bike details"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kaX9kBlDEeuG9cCZF6xdDw" name="Activate bike"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qNpjwBlDEeuG9cCZF6xdDw" name="Payment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_YJR4ABlGEeuG9cCZF6xdDw" name="&lt;&lt;Extends>>" client="_kaX9kBlDEeuG9cCZF6xdDw" supplier="_RGhuUBlDEeuG9cCZF6xdDw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_tXXCUBklEeuJU-Q5HyAB_A" name="User"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_y4UJcBklEeuJU-Q5HyAB_A" name="UberRide Client">
@@ -135,5 +140,26 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_BshyYhkrEeuJU-Q5HyAB_A" type="_awaN8BkoEeuJU-Q5HyAB_A" association="_BshLUBkrEeuJU-Q5HyAB_A"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_BshyYxkrEeuJU-Q5HyAB_A" name="end ride" type="__1TLABkqEeuJU-Q5HyAB_A" association="_BshLUBkrEeuJU-Q5HyAB_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6OXOUBlDEeuG9cCZF6xdDw" memberEnd="_6Oct4BlDEeuG9cCZF6xdDw _6Oct4RlDEeuG9cCZF6xdDw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6OZDgBlDEeuG9cCZF6xdDw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6OZDgRlDEeuG9cCZF6xdDw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6Oct4BlDEeuG9cCZF6xdDw" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_6OXOUBlDEeuG9cCZF6xdDw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6Oct4RlDEeuG9cCZF6xdDw" name="display available bycicles on a map" type="_MEySwBlDEeuG9cCZF6xdDw" association="_6OXOUBlDEeuG9cCZF6xdDw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dm0ewBlGEeuG9cCZF6xdDw" memberEnd="_dm1F0hlGEeuG9cCZF6xdDw _dm1s4BlGEeuG9cCZF6xdDw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dm1F0BlGEeuG9cCZF6xdDw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dm1F0RlGEeuG9cCZF6xdDw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dm1F0hlGEeuG9cCZF6xdDw" name="display bike details" type="_RGhuUBlDEeuG9cCZF6xdDw" association="_dm0ewBlGEeuG9cCZF6xdDw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dm1s4BlGEeuG9cCZF6xdDw" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_dm0ewBlGEeuG9cCZF6xdDw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ee1E0BlGEeuG9cCZF6xdDw" memberEnd="_ee1r4hlGEeuG9cCZF6xdDw _ee2S8BlGEeuG9cCZF6xdDw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ee1r4BlGEeuG9cCZF6xdDw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ee1r4RlGEeuG9cCZF6xdDw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ee1r4hlGEeuG9cCZF6xdDw" name="payment" type="_qNpjwBlDEeuG9cCZF6xdDw" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ee2S8BlGEeuG9cCZF6xdDw" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
   </packagedElement>
 </uml:Package>
