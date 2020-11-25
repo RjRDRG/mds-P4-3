@@ -162,4 +162,32 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_ee1r4hlGEeuG9cCZF6xdDw" name="payment" type="_qNpjwBlDEeuG9cCZF6xdDw" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_ee2S8BlGEeuG9cCZF6xdDw" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l6bioC9eEeui-uTQNioM4g" name="Account"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n7xIQC9eEeui-uTQNioM4g" name="Driver alert"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ozzjgC9eEeui-uTQNioM4g" name="Client account">
+    <generalization xmi:type="uml:Generalization" xmi:id="_YFI74C9gEeui-uTQNioM4g" general="_l6bioC9eEeui-uTQNioM4g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UVKDIC9gEeui-uTQNioM4g" name="account" type="_l6bioC9eEeui-uTQNioM4g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UVKqMC9gEeui-uTQNioM4g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UVKqMS9gEeui-uTQNioM4g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2AoCwC9hEeui-uTQNioM4g" name="Nome"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qL3ioC9eEeui-uTQNioM4g" name="Driver account">
+    <generalization xmi:type="uml:Generalization" xmi:id="_a8AbUC9gEeui-uTQNioM4g" general="_l6bioC9eEeui-uTQNioM4g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tcEvIC9eEeui-uTQNioM4g" name="Payment method"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vvXAYC9eEeui-uTQNioM4g" name="Rentable Bike"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5qGLMC9eEeui-uTQNioM4g" name="map"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BnLWgC9fEeui-uTQNioM4g" name="Trip"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KT09kC9fEeui-uTQNioM4g" name="Review"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3h6hQC9fEeui-uTQNioM4g" name="Class37"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5KN70C9fEeui-uTQNioM4g" name="Car"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_hwKPsC9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_ozzjgC9eEeui-uTQNioM4g" supplier="_tcEvIC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_msV10C9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_BnLWgC9fEeui-uTQNioM4g" supplier="_tcEvIC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="__RHzMC9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_ozzjgC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_CpSo4C9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_qL3ioC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_FBGNwC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_qL3ioC9eEeui-uTQNioM4g" supplier="_n7xIQC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_RE9BMC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_qL3ioC9eEeui-uTQNioM4g" supplier="_KT09kC9fEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_SxVqgC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_vvXAYC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_U_hZUC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_5KN70C9fEeui-uTQNioM4g"/>
 </uml:Package>
