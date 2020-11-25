@@ -162,26 +162,99 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_ee1r4hlGEeuG9cCZF6xdDw" name="payment" type="_qNpjwBlDEeuG9cCZF6xdDw" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_ee2S8BlGEeuG9cCZF6xdDw" name="uberride client" type="_y4UJcBklEeuJU-Q5HyAB_A" association="_ee1E0BlGEeuG9cCZF6xdDw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_l6bioC9eEeui-uTQNioM4g" name="Account"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_n7xIQC9eEeui-uTQNioM4g" name="Driver alert"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l6bioC9eEeui-uTQNioM4g" name="Account">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wGQrMC9jEeuxrMwKeoxmPQ" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yKvEYC9jEeuxrMwKeoxmPQ" name="user name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sG614C9lEeuxrMwKeoxmPQ" name="getAccountId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_t15gMC9lEeuxrMwKeoxmPQ" name="editAccount"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n7xIQC9eEeui-uTQNioM4g" name="Driver alert">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jL1KMC9lEeuxrMwKeoxmPQ" name="location">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ozzjgC9eEeui-uTQNioM4g" name="Client account">
     <generalization xmi:type="uml:Generalization" xmi:id="_YFI74C9gEeui-uTQNioM4g" general="_l6bioC9eEeui-uTQNioM4g"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_UVKDIC9gEeui-uTQNioM4g" name="account" type="_l6bioC9eEeui-uTQNioM4g">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UVKqMC9gEeui-uTQNioM4g"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UVKqMS9gEeui-uTQNioM4g" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_2AoCwC9hEeui-uTQNioM4g" name="Nome"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2AoCwC9hEeui-uTQNioM4g" name="clientID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pypYEC9jEeuxrMwKeoxmPQ" name="payment method" type="_tcEvIC9eEeui-uTQNioM4g"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IXYa0C9mEeuxrMwKeoxmPQ" name="addPaymentMethod"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Jq_-0C9mEeuxrMwKeoxmPQ" name="getAccountId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KgNIgC9mEeuxrMwKeoxmPQ" name="removePaymentMethod"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_qL3ioC9eEeui-uTQNioM4g" name="Driver account">
     <generalization xmi:type="uml:Generalization" xmi:id="_a8AbUC9gEeui-uTQNioM4g" general="_l6bioC9eEeui-uTQNioM4g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TDl7UC9lEeuxrMwKeoxmPQ" name="driverID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UsUzsC9lEeuxrMwKeoxmPQ" name="car">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DMBwQC9mEeuxrMwKeoxmPQ" name="getAccountId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EarUsC9mEeuxrMwKeoxmPQ" name="enableAlerts"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_tcEvIC9eEeui-uTQNioM4g" name="Payment method"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_vvXAYC9eEeui-uTQNioM4g" name="Rentable Bike"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_5qGLMC9eEeui-uTQNioM4g" name="map"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_BnLWgC9fEeui-uTQNioM4g" name="Trip"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_KT09kC9fEeui-uTQNioM4g" name="Review"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tcEvIC9eEeui-uTQNioM4g" name="Payment method">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QumPUC9kEeuxrMwKeoxmPQ" name="payID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ft9KkC9kEeuxrMwKeoxmPQ" name="details">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vvXAYC9eEeui-uTQNioM4g" name="Rentable Bike">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MHcBgC9lEeuxrMwKeoxmPQ" name="bikeID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__zUIAC9lEeuxrMwKeoxmPQ" name="getBikeRange"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UgndgC9mEeuxrMwKeoxmPQ" name="getBikeId"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5qGLMC9eEeui-uTQNioM4g" name="map">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GmloEC9lEeuxrMwKeoxmPQ" name="location">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wr6EAC9lEeuxrMwKeoxmPQ" name="findDrivers"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yAdcIC9lEeuxrMwKeoxmPQ" name="chooseDestination"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0lwDYC9lEeuxrMwKeoxmPQ" name="showRoute"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1oSecC9lEeuxrMwKeoxmPQ" name="calculatePrice"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5PcyYC9lEeuxrMwKeoxmPQ" name="Choose car"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BnLWgC9fEeui-uTQNioM4g" name="Trip">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3CH0oC9kEeuxrMwKeoxmPQ" name="Distance">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6w5McC9kEeuxrMwKeoxmPQ" name="car" type="_5KN70C9fEeui-uTQNioM4g"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8N1rkC9kEeuxrMwKeoxmPQ" name="price">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KT09kC9fEeui-uTQNioM4g" name="Review">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ca-hcC9lEeuxrMwKeoxmPQ" name="message">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dNHwEC9lEeuxrMwKeoxmPQ" name="classification">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PMq3oC9mEeuxrMwKeoxmPQ" name="postReview"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_3h6hQC9fEeui-uTQNioM4g" name="Class37"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_5KN70C9fEeui-uTQNioM4g" name="Car"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5KN70C9fEeui-uTQNioM4g" name="Car">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OKal4C9lEeuxrMwKeoxmPQ" name="model">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QAWz0C9lEeuxrMwKeoxmPQ" name="carID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ByYcwC9mEeuxrMwKeoxmPQ" name="getCarModel"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_hwKPsC9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_ozzjgC9eEeui-uTQNioM4g" supplier="_tcEvIC9eEeui-uTQNioM4g"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_msV10C9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_BnLWgC9fEeui-uTQNioM4g" supplier="_tcEvIC9eEeui-uTQNioM4g"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="__RHzMC9gEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_ozzjgC9eEeui-uTQNioM4g"/>
@@ -190,4 +263,89 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_RE9BMC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_qL3ioC9eEeui-uTQNioM4g" supplier="_KT09kC9fEeui-uTQNioM4g"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_SxVqgC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_vvXAYC9eEeui-uTQNioM4g"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_U_hZUC9hEeui-uTQNioM4g" name="&lt;&lt;use>>" client="_5qGLMC9eEeui-uTQNioM4g" supplier="_5KN70C9fEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_seRGQC9iEeuxrMwKeoxmPQ" name="PrimitiveTypes" URI="http://www.omg.org/spec/PrimitiveTypes/20131001">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_seRGQS9iEeuxrMwKeoxmPQ" name="Boolean">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_seRGQi9iEeuxrMwKeoxmPQ" annotatedElement="_seRGQS9iEeuxrMwKeoxmPQ">
+        <body>Boolean is used for logical expressions, consisting of the predefined values true and false.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_seRGQy9iEeuxrMwKeoxmPQ" name="Integer">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_seRGRC9iEeuxrMwKeoxmPQ" annotatedElement="_seRGQy9iEeuxrMwKeoxmPQ">
+        <body>Integer is a primitive type representing integer values.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_seRGRS9iEeuxrMwKeoxmPQ" name="Real">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_seRGRi9iEeuxrMwKeoxmPQ" annotatedElement="_seRGRS9iEeuxrMwKeoxmPQ">
+        <body>Real is a primitive type representing the mathematical concept of real.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_seRGRy9iEeuxrMwKeoxmPQ" name="String">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_seRGSC9iEeuxrMwKeoxmPQ" annotatedElement="_seRGRy9iEeuxrMwKeoxmPQ">
+        <body>String is a sequence of characters in some suitable character set used to display information about the model. Character sets may include non-Roman alphabets and characters.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_seRGSS9iEeuxrMwKeoxmPQ" name="UnlimitedNatural">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_seRGSi9iEeuxrMwKeoxmPQ" annotatedElement="_seRGSS9iEeuxrMwKeoxmPQ">
+        <body>UnlimitedNatural is a primitive type representing unlimited natural values.</body>
+      </ownedComment>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_seRGSy9iEeuxrMwKeoxmPQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_seRGTC9iEeuxrMwKeoxmPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_seRGTS9iEeuxrMwKeoxmPQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_seRGTi9iEeuxrMwKeoxmPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_t2ZW0C9iEeuxrMwKeoxmPQ" name="CopyOf_PrimitiveTypes_47" URI="http://www.omg.org/spec/PrimitiveTypes/20131001">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t2ZW0S9iEeuxrMwKeoxmPQ" name="Boolean">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2ZW0i9iEeuxrMwKeoxmPQ" annotatedElement="_t2ZW0S9iEeuxrMwKeoxmPQ">
+        <body>Boolean is used for logical expressions, consisting of the predefined values true and false.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t2ZW0y9iEeuxrMwKeoxmPQ" name="Integer">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2ZW1C9iEeuxrMwKeoxmPQ" annotatedElement="_t2ZW0y9iEeuxrMwKeoxmPQ">
+        <body>Integer is a primitive type representing integer values.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t2ZW1S9iEeuxrMwKeoxmPQ" name="Real">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2ZW1i9iEeuxrMwKeoxmPQ" annotatedElement="_t2ZW1S9iEeuxrMwKeoxmPQ">
+        <body>Real is a primitive type representing the mathematical concept of real.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t2ZW1y9iEeuxrMwKeoxmPQ" name="String">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2ZW2C9iEeuxrMwKeoxmPQ" annotatedElement="_t2ZW1y9iEeuxrMwKeoxmPQ">
+        <body>String is a sequence of characters in some suitable character set used to display information about the model. Character sets may include non-Roman alphabets and characters.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t2ZW2S9iEeuxrMwKeoxmPQ" name="UnlimitedNatural">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_t2ZW2i9iEeuxrMwKeoxmPQ" annotatedElement="_t2ZW2S9iEeuxrMwKeoxmPQ">
+        <body>UnlimitedNatural is a primitive type representing unlimited natural values.</body>
+      </ownedComment>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_t2ZW2y9iEeuxrMwKeoxmPQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t2ZW3C9iEeuxrMwKeoxmPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_t2ZW3S9iEeuxrMwKeoxmPQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t2ZW3i9iEeuxrMwKeoxmPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qozukC9kEeuxrMwKeoxmPQ" name="&lt;&lt;use>>" client="_BnLWgC9fEeui-uTQNioM4g" supplier="_5qGLMC9eEeui-uTQNioM4g"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tWvw8C9jEeuxrMwKeoxmPQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tWw_EC9jEeuxrMwKeoxmPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
