@@ -275,4 +275,166 @@
   <packagedElement xmi:type="uml:Association" xmi:id="_c-0VgBlEEeuMYZfga_fWSg"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_yPZ-QBlEEeuMYZfga_fWSg"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_zdTUwBlEEeuMYZfga_fWSg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_syjN0C9aEeuMmdgCkYL12Q" name="Carrier Account">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OLbWsC9eEeuMmdgCkYL12Q" general="_N_p2cC9cEeuMmdgCkYL12Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XM9ooC9eEeuMmdgCkYL12Q" name="carrierId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8xKloC9lEeuMmdgCkYL12Q" name="joinDate" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FHjo0C9mEeuMmdgCkYL12Q" name="DOTNumber" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QSEZcC9mEeuMmdgCkYL12Q" name="MCNumber" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YJiE8C9mEeuMmdgCkYL12Q" name="mobileNumber" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cQlZ4C9mEeuMmdgCkYL12Q" name="name" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lxB1YC9mEeuMmdgCkYL12Q" name="role" type="_nWk24C9mEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5Adz0C9oEeuMmdgCkYL12Q" name="trailerType" type="_q7JCcC9pEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OjbzwC9uEeuMmdgCkYL12Q" name="paymentMethod" type="_VfbyAC9tEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6bpxsC9jEeuMmdgCkYL12Q" name="getAccountId"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ynox4C9aEeuMmdgCkYL12Q" name="Shipper Account">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NGMM8C9eEeuMmdgCkYL12Q" general="_N_p2cC9cEeuMmdgCkYL12Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-E1e4C9jEeuMmdgCkYL12Q" name="shipperId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eXRrgC9kEeuMmdgCkYL12Q" name="getAccountId"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N_p2cC9cEeuMmdgCkYL12Q" name="Account">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fUqacC9cEeuMmdgCkYL12Q" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_csQYUC9dEeuMmdgCkYL12Q" name="username" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Hf554C9eEeuMmdgCkYL12Q" name="editAccount"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_61kVQC9dEeuMmdgCkYL12Q" name="getAccountId"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yFz2MC9lEeuMmdgCkYL12Q" name="Load">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RJSN8C9pEeuMmdgCkYL12Q" name="loadId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ol98oC9pEeuMmdgCkYL12Q" name="deadhead" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XF4IMC9pEeuMmdgCkYL12Q" name="ratePerMile" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBkY0C9pEeuMmdgCkYL12Q" name="price" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_as8VgC9pEeuMmdgCkYL12Q" name="weight" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jPm6IC9pEeuMmdgCkYL12Q" name="trailerType" type="_q7JCcC9pEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lazmYC9pEeuMmdgCkYL12Q" name="packagingType" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_otQ1oC9pEeuMmdgCkYL12Q" name="commodity" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yyWkYC9rEeuMmdgCkYL12Q" name="location" type="_tFsZAC9qEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AmND4C9uEeuMmdgCkYL12Q" name="destination" type="_tFsZAC9qEeuMmdgCkYL12Q" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_nWk24C9mEeuMmdgCkYL12Q" name="Role">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NYtxQC9nEeuMmdgCkYL12Q" name="Owner Operator">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_W_YwkC9nEeuMmdgCkYL12Q"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fvvy8C9nEeuMmdgCkYL12Q" name="Company Driver/Leased on Carrier">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_jS_3QC9nEeuMmdgCkYL12Q" value="1"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bvg3sC9nEeuMmdgCkYL12Q" name="Dispatcher">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_eM45EC9nEeuMmdgCkYL12Q" value="2"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L_waQC9nEeuMmdgCkYL12Q" name="Shipper">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_U0niIC9nEeuMmdgCkYL12Q" value="3"/>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_FQhQMC9pEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_nWk24C9mEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_q7JCcC9pEeuMmdgCkYL12Q" name="Trailer">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wtFy8C9pEeuMmdgCkYL12Q" name="Dry Van">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_y3xh0C9pEeuMmdgCkYL12Q"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zd670C9pEeuMmdgCkYL12Q" name="Reefer">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_0-eIkC9pEeuMmdgCkYL12Q" value="1"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1x-CEC9pEeuMmdgCkYL12Q" name="Flat Bed">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_F7EMkC9qEeuMmdgCkYL12Q" value="2"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_G6x9IC9qEeuMmdgCkYL12Q" name="No Trailer">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_I2L54C9qEeuMmdgCkYL12Q" value="3"/>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_a9TQQC9qEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_dOEZAC9qEeuMmdgCkYL12Q" client="_yFz2MC9lEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tFsZAC9qEeuMmdgCkYL12Q" name="Factility">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_427LYC9qEeuMmdgCkYL12Q" name="locationId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-OzPAC9qEeuMmdgCkYL12Q" name="phoneNumber" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CeVKgC9rEeuMmdgCkYL12Q" name="restroom" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EXBxgC9rEeuMmdgCkYL12Q" name="food" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GoWT4C9rEeuMmdgCkYL12Q" name="overnightParking" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IxFiAC9rEeuMmdgCkYL12Q" name="onSiteScale" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KZjUoC9rEeuMmdgCkYL12Q" name="driverRestArea" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sqYgkC9rEeuMmdgCkYL12Q" name="reviews" type="_Q-YTkC9rEeuMmdgCkYL12Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ueVxgC9rEeuMmdgCkYL12Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ueZb4C9rEeuMmdgCkYL12Q" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Q-YTkC9rEeuMmdgCkYL12Q" name="Review">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iC3vUC9rEeuMmdgCkYL12Q" name="reviewId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kbt2AC9rEeuMmdgCkYL12Q" name="starRating" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qPvDEC9rEeuMmdgCkYL12Q" name="review" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g9m68C9sEeuMmdgCkYL12Q" name="date" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_4XGmYC9rEeuMmdgCkYL12Q" client="_yFz2MC9lEeuMmdgCkYL12Q" supplier="_tFsZAC9qEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_44wh8C9rEeuMmdgCkYL12Q" client="_tFsZAC9qEeuMmdgCkYL12Q" supplier="_Q-YTkC9rEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VfbyAC9tEeuMmdgCkYL12Q" name="PaymentMethod" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WwLBIC9tEeuMmdgCkYL12Q" name="Factoring Company">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dawp0C9tEeuMmdgCkYL12Q" general="_VfbyAC9tEeuMmdgCkYL12Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hmjU0C9tEeuMmdgCkYL12Q" name="factoringCompanyName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XxYmgC9tEeuMmdgCkYL12Q" name="ACH Direct Deposit">
+    <generalization xmi:type="uml:Generalization" xmi:id="_chSrMC9tEeuMmdgCkYL12Q" general="_VfbyAC9tEeuMmdgCkYL12Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_py0WMC9uEeuMmdgCkYL12Q" name="bankName" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vwcyQC9uEeuMmdgCkYL12Q" name="routingNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xnNfkC9uEeuMmdgCkYL12Q" name="carrierAccountNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_IyFgMC9uEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_VfbyAC9tEeuMmdgCkYL12Q"/>
 </uml:Package>
