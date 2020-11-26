@@ -454,7 +454,10 @@
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_NEUQwC92EeuMmdgCkYL12Q" name="Map">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ysFYwC91EeuMmdgCkYL12Q" name="locations" type="_1zQlEC91EeuMmdgCkYL12Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ysFYwC91EeuMmdgCkYL12Q" name="locations" type="_1zQlEC91EeuMmdgCkYL12Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XbafEC-EEeuQq9iiIUc84g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XbewgC-EEeuQq9iiIUc84g" value="*"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gRPqkC90EeuMmdgCkYL12Q" name="enterLocation"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_hBvd8C91EeuMmdgCkYL12Q" name="showRoute"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_njphMC90EeuMmdgCkYL12Q" name="findLocation"/>
