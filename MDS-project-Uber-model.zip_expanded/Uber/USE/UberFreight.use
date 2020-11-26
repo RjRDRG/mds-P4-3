@@ -1,0 +1,92 @@
+model UberFreight
+
+-- classes
+
+class Load
+attributes
+	loadId : Integer
+	availabilityStartDate : Integer
+	availabilityEndDate : Integer
+	status : Load Status
+end
+
+class Facility
+attributes
+	facilityId : Integer
+	loads : Set(Load)
+operations
+  pickupLoad(loadId : Integer, time : Integer)
+end
+
+class Location
+attributes
+	state : String
+	facilities : Set(Facility)
+end
+
+class Haul
+attributes
+	loads : Set(Load)
+	pickupDate : Set(Pickup Date)
+end
+	
+class Pickup Date
+attributes
+	loadId : Integer
+	pickupDate : Integer
+end
+
+-- associations
+
+association LoadInFacility between
+	Load[*]
+	Facility[1]
+end
+
+association FacilityInLocation between
+	Facility[*]
+	Location[1]
+end
+
+association LoadInHaul
+	Load[1..*]
+	Haul[1]
+end
+
+association HaulPickupDate
+	Haul[1]
+	Pickup Date[1..*]
+end
+
+-- constraints
+
+constraints
+
+context Haul
+	inv NoLoadsOnMultipleHauls
+		Haul.allInstances->forAll(h1, h2 |
+			h1.loads->intersection(h2.loads)->isEmpty()
+		)
+	inv ValidLoadStatusInHaul
+		Haul.allInstances->forAll(h1 |
+			h1.status > 0
+		)
+	inv ValidPickupDates
+		self.pickupDate->forAll(p |
+			self.loads->one(l |
+				l.loadId == p.loadId implies (
+					p.pickupDate >= l.availabilityStartDate and
+					p.pickupDate <= l.availabilityEndDate)
+			)
+		)
+
+context Facility::pickupLoad(loadId : Integer, time : Integer)
+	pre pickupLoadPre1: self.loads->one(l |
+		l.loadId == loadId implies (
+			time > l.availabilityStartDate and
+			time > l.availabilityEndDate)
+	)
+	
+	post pickupLoadPost1: self.loads->reject(l |
+		l.loadId != loadId
+	)
