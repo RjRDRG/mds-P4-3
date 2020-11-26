@@ -1,0 +1,83 @@
+-- $ProjectHeader: use 0.393 Wed, 16 May 2007 14:10:28 +0200 opti $
+
+model UberRide
+
+-- classes
+
+class Trip
+attributes
+  restaurantID : String
+  Distance : Integer
+  car : Car
+  price : Integer
+  locationId : String
+operations
+  ChooseCar(model : String)
+end
+
+class Location
+attributes
+  cars : Set(Car)
+  bikes : Set(Bike)
+  locationId : String
+operations
+  removeBike(bikeId : String)
+end
+
+class Bike
+attributes
+  bikeId : String
+end
+
+class Car
+attributes
+  model : String
+  carId : String
+end
+
+--association
+association TripFromLocation between
+	Location[1]
+	Trip[*]
+end
+
+
+--constraints
+
+constraints
+
+context Trip
+	inv NoCarOnMultipleTrips
+		Trip.allInstances->forAll(t1, t2 | 
+		t1.car.carId != t2.car.carId
+		)
+
+	inv AtLeastOneCarOnLocation
+		self.location.allInstances->forAll(l |
+			l.locationId == self.locationId implies(
+				l.cars -> !isEmpty()
+			)
+		)
+		
+
+context Location
+	inv NoBikeOnTwoLocations
+		Location.allInstances->forAll(l1,l2 |
+		l1.bikes->intersection(l2.bikes)->isEmpty()
+		)
+
+context Trip::ChooseCar(model : String)
+	pre modelIsAvailable: self.location.allInstances->forAll(l |
+			l.locationId == self.locationId implies(
+				l.cars->one(c|
+					c.model==model
+				)
+			)
+		)
+	
+context Location::removeBike(bikeId : String)
+	post removedBike: self.bikes->forAll(b |
+		b.bikeId != bikeId
+		)
+
+
