@@ -59,34 +59,30 @@ end
 constraints
 
 context Menu
-  inv AllItemsInMenuExist
+  inv AllItemsInMenuExist:
     self.itemID->forAll(id | 
       self.restaurant.items->one(it |
-		it.itemID == id
+		it.itemID = id
 	  )
 	)
 
 context Restaurant
-  inv NoOrdersBelongToDifferentRestaurant
+  inv NoOrdersBelongToDifferentRestaurant:
     self.orders->forAll(o | 
-	  o.restaurantID == self.restaurantID
+	  o.restaurantID = self.restaurantID
 	)
-  inv AllOrdersContainValidItems
+  inv AllOrdersContainValidItems:
     self.orders->forAll(o | 
-	  o.itemID->forAll(id | 
-        self.restaurant.items->one(it |
-		  it.itemID == id
-	    )
+      self.items->one(it |
+	   it.itemID = o.itemID
 	  )
 	)
 	
 context Delivery
-  inv DeliveryStatus
-    self.orders->forAll(o |
-	  o.status >= 4
-	)
-  inv NotTwoDeliverysOfTheSameOrder
+  inv DeliveryStatus:
+    self.order.status >= 4
+  inv NotTwoDeliverysOfTheSameOrder:
     Delivery.allInstances->forAll(d1, d2 |
-      d1.itemID != d2.itemID
+      not(d1.orderID = d2.orderID)
     )	  
   

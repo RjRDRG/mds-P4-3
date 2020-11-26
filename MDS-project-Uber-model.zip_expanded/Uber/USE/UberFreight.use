@@ -7,7 +7,7 @@ attributes
 	loadId : Integer
 	availabilityStartDate : Integer
 	availabilityEndDate : Integer
-	status : Load Status
+	status : Integer
 end
 
 class Facility
@@ -27,10 +27,10 @@ end
 class Haul
 attributes
 	loads : Set(Load)
-	pickupDate : Set(Pickup Date)
+	pickupDate : Set(PickupDate)
 end
 	
-class Pickup Date
+class PickupDate
 attributes
 	loadId : Integer
 	pickupDate : Integer
@@ -48,14 +48,14 @@ association FacilityInLocation between
 	Location[1]
 end
 
-association LoadInHaul
+association LoadInHaul between
 	Load[1..*]
 	Haul[1]
 end
 
-association HaulPickupDate
+association HaulPickupDate between
 	Haul[1]
-	Pickup Date[1..*]
+	PickupDate[1..*]
 end
 
 -- constraints
@@ -63,18 +63,20 @@ end
 constraints
 
 context Haul
-	inv NoLoadsOnMultipleHauls
+	inv NoLoadsOnMultipleHauls:
 		Haul.allInstances->forAll(h1, h2 |
 			h1.loads->intersection(h2.loads)->isEmpty()
 		)
-	inv ValidLoadStatusInHaul
+	inv ValidLoadStatusInHaul:
 		Haul.allInstances->forAll(h1 |
-			h1.status > 0
+			h1.loads->forAll(l | 
+			  l.status > 0
+			)
 		)
-	inv ValidPickupDates
+	inv ValidPickupDates:
 		self.pickupDate->forAll(p |
 			self.loads->one(l |
-				l.loadId == p.loadId implies (
+				l.loadId = p.loadId implies (
 					p.pickupDate >= l.availabilityStartDate and
 					p.pickupDate <= l.availabilityEndDate)
 			)
@@ -82,11 +84,11 @@ context Haul
 
 context Facility::pickupLoad(loadId : Integer, time : Integer)
 	pre pickupLoadPre1: self.loads->one(l |
-		l.loadId == loadId implies (
+		l.loadId = loadId implies (
 			time > l.availabilityStartDate and
 			time > l.availabilityEndDate)
 	)
 	
-	post pickupLoadPost1: self.loads->reject(l |
-		l.loadId != loadId
-	)
+	post pickupLoadPost1: not(self.loads->one(l |
+		l.loadId = loadId
+	))
