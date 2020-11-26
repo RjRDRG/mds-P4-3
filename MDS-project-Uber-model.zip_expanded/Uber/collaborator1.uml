@@ -342,6 +342,12 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_AmND4C9uEeuMmdgCkYL12Q" name="destination" type="_tFsZAC9qEeuMmdgCkYL12Q" isUnique="false"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_yyWkYC9rEeuMmdgCkYL12Q" name="pickup" type="_tFsZAC9qEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_s4coYC-EEeuQq9iiIUc84g" name="availabilityStartDate" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wVU-8C-EEeuQq9iiIUc84g" name="availabilityEndDate" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Enumeration" xmi:id="_nWk24C9mEeuMmdgCkYL12Q" name="Role">
     <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NYtxQC9nEeuMmdgCkYL12Q" name="Owner Operator">
@@ -466,11 +472,30 @@
   <packagedElement xmi:type="uml:Usage" xmi:id="_Q3njQC92EeuMmdgCkYL12Q" client="_NEUQwC92EeuMmdgCkYL12Q" supplier="_CTL0YA2TEeujq4q3EywG0A _1zQlEC91EeuMmdgCkYL12Q"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_qZQKcC92EeuMmdgCkYL12Q" client="_1zQlEC91EeuMmdgCkYL12Q" supplier="_tFsZAC9qEeuMmdgCkYL12Q"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_Obm9YC-CEeuQq9iiIUc84g" name="Haul">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Qoj9IC-CEeuQq9iiIUc84g" name="loads[]" type="_yFz2MC9lEeuMmdgCkYL12Q">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Qoj9IC-CEeuQq9iiIUc84g" name="loads" type="_yFz2MC9lEeuMmdgCkYL12Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mvVnAC-CEeuQq9iiIUc84g"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mvafgC-CEeuQq9iiIUc84g" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_iyORMC-CEeuQq9iiIUc84g" name="destination" type="_tFsZAC9qEeuMmdgCkYL12Q" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2vYRQC-EEeuQq9iiIUc84g" name="pickupDate" type="_z0XcMC-FEeuQq9iiIUc84g" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-SOXoC-EEeuQq9iiIUc84g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-SSCAC-EEeuQq9iiIUc84g" value="*"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_oeIrIC-CEeuQq9iiIUc84g" client="_Obm9YC-CEeuQq9iiIUc84g" supplier="_yFz2MC9lEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_z0XcMC-FEeuQq9iiIUc84g" name="Pickup Date">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7EtdUC-FEeuQq9iiIUc84g" name="loadId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7SmvYC-FEeuQq9iiIUc84g" name="pickupDate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_MGGhwC-GEeuQq9iiIUc84g" client="_Obm9YC-CEeuQq9iiIUc84g" supplier="_z0XcMC-FEeuQq9iiIUc84g"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_XWxkwC-GEeuQq9iiIUc84g" name="Load Status">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pCZR8C-GEeuQq9iiIUc84g" name="In Queue"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZeOZcC-GEeuQq9iiIUc84g" name="In Progress"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cw8ucC-GEeuQq9iiIUc84g" name="Delivered"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bj_MEC-GEeuQq9iiIUc84g" name="Canceled"/>
+  </packagedElement>
 </uml:Package>
