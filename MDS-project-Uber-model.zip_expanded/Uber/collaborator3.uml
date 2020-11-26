@@ -245,7 +245,6 @@
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PMq3oC9mEeuxrMwKeoxmPQ" name="postReview"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_3h6hQC9fEeui-uTQNioM4g" name="Class37"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_5KN70C9fEeui-uTQNioM4g" name="Car">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_OKal4C9lEeuxrMwKeoxmPQ" name="model">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>

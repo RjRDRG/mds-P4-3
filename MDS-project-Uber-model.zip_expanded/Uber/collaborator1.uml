@@ -375,7 +375,7 @@
   <packagedElement xmi:type="uml:Usage" xmi:id="_a9TQQC9qEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_dOEZAC9qEeuMmdgCkYL12Q" client="_yFz2MC9lEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_tFsZAC9qEeuMmdgCkYL12Q" name="Factility">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_427LYC9qEeuMmdgCkYL12Q" name="locationId">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_427LYC9qEeuMmdgCkYL12Q" name="facilityId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_-OzPAC9qEeuMmdgCkYL12Q" name="phoneNumber" isUnique="false">
@@ -399,6 +399,13 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_sqYgkC9rEeuMmdgCkYL12Q" name="reviews" type="_Q-YTkC9rEeuMmdgCkYL12Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ueVxgC9rEeuMmdgCkYL12Q"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ueZb4C9rEeuMmdgCkYL12Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KHqZwC9zEeuMmdgCkYL12Q" name="address">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9GUjAC91EeuMmdgCkYL12Q" name="loads" type="_yFz2MC9lEeuMmdgCkYL12Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_akOygC92EeuMmdgCkYL12Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_akTD8C92EeuMmdgCkYL12Q" value="*"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Q-YTkC9rEeuMmdgCkYL12Q" name="Review">
@@ -437,4 +444,21 @@
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_IyFgMC9uEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_VfbyAC9tEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1zQlEC91EeuMmdgCkYL12Q" name="Location">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SzDVMC92EeuMmdgCkYL12Q" name="state">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3X8q8C91EeuMmdgCkYL12Q" name="facilities" type="_tFsZAC9qEeuMmdgCkYL12Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7jTREC91EeuMmdgCkYL12Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7jVtUC91EeuMmdgCkYL12Q" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NEUQwC92EeuMmdgCkYL12Q" name="Map">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ysFYwC91EeuMmdgCkYL12Q" name="locations" type="_1zQlEC91EeuMmdgCkYL12Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gRPqkC90EeuMmdgCkYL12Q" name="enterLocation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hBvd8C91EeuMmdgCkYL12Q" name="showRoute"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_njphMC90EeuMmdgCkYL12Q" name="findLocation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QW4NsC92EeuMmdgCkYL12Q" client="_NEUQwC92EeuMmdgCkYL12Q" supplier="_tFsZAC9qEeuMmdgCkYL12Q"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Q3njQC92EeuMmdgCkYL12Q" client="_1zQlEC91EeuMmdgCkYL12Q" supplier="_NEUQwC92EeuMmdgCkYL12Q"/>
 </uml:Package>
