@@ -218,9 +218,6 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UgndgC9mEeuxrMwKeoxmPQ" name="getBikeId"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_5qGLMC9eEeui-uTQNioM4g" name="map">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_GmloEC9lEeuxrMwKeoxmPQ" name="location">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_wr6EAC9lEeuxrMwKeoxmPQ" name="showDrivers"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yAdcIC9lEeuxrMwKeoxmPQ" name="chooseDestination"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_0lwDYC9lEeuxrMwKeoxmPQ" name="showRoute"/>
@@ -233,6 +230,9 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_6w5McC9kEeuxrMwKeoxmPQ" name="car" type="_5KN70C9fEeui-uTQNioM4g"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_8N1rkC9kEeuxrMwKeoxmPQ" name="price">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_U89rMC96Eeu6zt2y0Q-pBw" name="locatioId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1oSecC9lEeuxrMwKeoxmPQ" name="calculatePrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5PcyYC9lEeuxrMwKeoxmPQ" name="Choose car"/>
@@ -341,13 +341,16 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_qozukC9kEeuxrMwKeoxmPQ" name="&lt;&lt;use>>" client="_BnLWgC9fEeui-uTQNioM4g" supplier="_5qGLMC9eEeui-uTQNioM4g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qozukC9kEeuxrMwKeoxmPQ" name="&lt;&lt;use>>" client="_BnLWgC9fEeui-uTQNioM4g" supplier="_aCSN8C90Eeu6zt2y0Q-pBw"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_aCSN8C90Eeu6zt2y0Q-pBw" name="Location">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zVEg0C90Eeu6zt2y0Q-pBw" name="cars" type="_5KN70C9fEeui-uTQNioM4g">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hhb1MC92Eeu6zt2y0Q-pBw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_n2kLQC92Eeu6zt2y0Q-pBw" name="bikes" type="_5KN70C9fEeui-uTQNioM4g">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pD79UC92Eeu6zt2y0Q-pBw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TwTq0C96Eeu6zt2y0Q-pBw" name="locatioId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_0eltoC90Eeu6zt2y0Q-pBw" name="addCar"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_vcwgkC92Eeu6zt2y0Q-pBw" name="addBike"/>
