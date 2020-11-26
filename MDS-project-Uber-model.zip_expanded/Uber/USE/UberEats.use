@@ -1,0 +1,92 @@
+-- $ProjectHeader: use 0.393 Wed, 16 May 2007 14:10:28 +0200 opti $
+
+model UberEats
+
+-- classes
+
+class Restaurant
+attributes
+  restaurantID: String
+  menus : Sequence(Menu)
+  items : Set(Item)
+  orders : Set(Order)
+end
+
+class Menu
+attributes
+  itemID : Set(String)
+end
+
+class Item
+attributes
+  itemID : String
+  price : Integer
+end
+
+class Order
+attributes
+  restaurantID : String
+  itemID : String
+  price : Integer
+  status : Integer
+end
+
+class Delivery
+attributes
+  orderID : String
+  driverID : String
+end
+
+-- associations
+
+association IsIn between
+  Item[*]
+  Menu[*]
+end
+
+association Belongs between
+  Restaurant[1]
+  Menu[*]
+end
+
+association OrderDelivery between
+  Delivery[1..*]
+  Order[1]
+end
+
+-- OCL constraints
+
+constraints
+
+context Menu
+  inv AllItemsInMenuExist
+    self.itemID->forAll(id | 
+      self.restaurant.items->one(it |
+		it.itemID == id
+	  )
+	)
+
+context Restaurant
+  inv NoOrdersBelongToDifferentRestaurant
+    self.orders->forAll(o | 
+	  o.restaurantID == self.restaurantID
+	)
+  inv AllOrdersContainValidItems
+    self.orders->forAll(o | 
+	  o.itemID->forAll(id | 
+        self.restaurant.items->one(it |
+		  it.itemID == id
+	    )
+	  )
+	)
+	
+context Delivery
+  inv DeliveryStatus
+    self.orders->forAll(o |
+	  o.status >= 4
+	)
+  inv NotTwoDeliverysOfTheSameOrder
+    Delivery.allInstances->forAll(d1, d2 |
+      d1.itemID != d2.itemID
+    )	  
+  
