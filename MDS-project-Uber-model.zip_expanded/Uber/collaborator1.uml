@@ -348,6 +348,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_wVU-8C-EEeuQq9iiIUc84g" name="availabilityEndDate" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2QE0MC-GEeuQq9iiIUc84g" name="status" type="_XWxkwC-GEeuQq9iiIUc84g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Enumeration" xmi:id="_nWk24C9mEeuMmdgCkYL12Q" name="Role">
     <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NYtxQC9nEeuMmdgCkYL12Q" name="Owner Operator">
@@ -380,7 +381,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_a9TQQC9qEeuMmdgCkYL12Q" client="_syjN0C9aEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_dOEZAC9qEeuMmdgCkYL12Q" client="_yFz2MC9lEeuMmdgCkYL12Q" supplier="_q7JCcC9pEeuMmdgCkYL12Q"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_tFsZAC9qEeuMmdgCkYL12Q" name="Factility">
+  <packagedElement xmi:type="uml:Class" xmi:id="_tFsZAC9qEeuMmdgCkYL12Q" name="Facility">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_427LYC9qEeuMmdgCkYL12Q" name="facilityId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -413,6 +414,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_akOygC92EeuMmdgCkYL12Q"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_akTD8C92EeuMmdgCkYL12Q" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YKMB4C-KEeuQq9iiIUc84g" name="pickupLoad"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Q-YTkC9rEeuMmdgCkYL12Q" name="Review">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_iC3vUC9rEeuMmdgCkYL12Q" name="reviewId">
@@ -493,9 +495,18 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_MGGhwC-GEeuQq9iiIUc84g" client="_Obm9YC-CEeuQq9iiIUc84g" supplier="_z0XcMC-FEeuQq9iiIUc84g"/>
   <packagedElement xmi:type="uml:Enumeration" xmi:id="_XWxkwC-GEeuQq9iiIUc84g" name="Load Status">
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pCZR8C-GEeuQq9iiIUc84g" name="In Queue"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZeOZcC-GEeuQq9iiIUc84g" name="In Progress"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cw8ucC-GEeuQq9iiIUc84g" name="Delivered"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bj_MEC-GEeuQq9iiIUc84g" name="Canceled"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pCZR8C-GEeuQq9iiIUc84g" name="In Queue">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_w1PjMC-GEeuQq9iiIUc84g"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZeOZcC-GEeuQq9iiIUc84g" name="In Progress">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_x6_DQC-GEeuQq9iiIUc84g" value="1"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cw8ucC-GEeuQq9iiIUc84g" name="Delivered">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_zEr2QC-GEeuQq9iiIUc84g" value="2"/>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bj_MEC-GEeuQq9iiIUc84g" name="Canceled">
+      <specification xmi:type="uml:LiteralInteger" xmi:id="_0zJjMC-GEeuQq9iiIUc84g" value="3"/>
+    </ownedLiteral>
   </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_tffIUC-GEeuQq9iiIUc84g" client="_yFz2MC9lEeuMmdgCkYL12Q" supplier="_XWxkwC-GEeuQq9iiIUc84g"/>
 </uml:Package>
