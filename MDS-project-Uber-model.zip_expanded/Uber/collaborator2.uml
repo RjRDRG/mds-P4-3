@@ -331,14 +331,11 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4-o6kC82Eeu1ReXrTnE8lw" name="checkout"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_l7XMAC84Eeu1ReXrTnE8lw" name="newOrder"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_oO8dYC8mEeu1ReXrTnE8lw" name="Map">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_iwULUC9DEeu1ReXrTnE8lw" name="location">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oO8dYC8mEeu1ReXrTnE8lw" name="Map" visibility="public">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sHqj8C89Eeu1ReXrTnE8lw" name="findOrders"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_uQ7WgC89Eeu1ReXrTnE8lw" name="acceptOrder"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yanIsC89Eeu1ReXrTnE8lw" name="showRoute"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_pxfvEC9DEeu1ReXrTnE8lw" name="enterLocation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pxfvEC9DEeu1ReXrTnE8lw" name="getAllLocations"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_AuCv4C8vEeu1ReXrTnE8lw" name="Review">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ERr1wC8vEeu1ReXrTnE8lw" name="Message" isUnique="false">
