@@ -2206,6 +2206,10 @@
               <element xmi:type="uml:Operation" href="collaborator2.uml#_Qw8wsERVEeuNL_X3WyclGg"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_QxrJcURVEeuNL_X3WyclGg"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_4rdd8ESBEeuNL_X3WyclGg" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="collaborator2.uml#_4rWwQESBEeuNL_X3WyclGg"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_4rdd8USBEeuNL_X3WyclGg"/>
+            </children>
             <styles xmi:type="notation:TitleStyle" xmi:id="_vZelyERAEeuNL_X3WyclGg"/>
             <styles xmi:type="notation:SortingStyle" xmi:id="_vZelyURAEeuNL_X3WyclGg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_vZelykRAEeuNL_X3WyclGg"/>
