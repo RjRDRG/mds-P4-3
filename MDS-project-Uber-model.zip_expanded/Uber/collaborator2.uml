@@ -47,9 +47,9 @@
       <transition xmi:type="uml:Transition" xmi:id="_3ESQUER3EeuNL_X3WyclGg" source="_nA2U0ERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
       <transition xmi:type="uml:Transition" xmi:id="_5Ef0kER3EeuNL_X3WyclGg" source="_9yJiYERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
       <transition xmi:type="uml:Transition" xmi:id="_FQug4ER4EeuNL_X3WyclGg" source="_owRNkER2EeuNL_X3WyclGg" target="_hS9HcER2EeuNL_X3WyclGg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_TTClEER4EeuNL_X3WyclGg" guard="_BW1owER5EeuNL_X3WyclGg" source="_tfvX8ER3EeuNL_X3WyclGg" target="_lO8SUERqEeuNL_X3WyclGg">
-        <ownedRule xmi:type="uml:Constraint" xmi:id="_BW1owER5EeuNL_X3WyclGg" name="InQueue">
-          <specification xmi:type="uml:InstanceValue" xmi:id="_FAG1gER5EeuNL_X3WyclGg" name="InQueue" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_ITZa4C8zEeu1ReXrTnE8lw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TTClEER4EeuNL_X3WyclGg" guard="_gbnk4ER4EeuNL_X3WyclGg" source="_tfvX8ER3EeuNL_X3WyclGg" target="_lO8SUERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_gbnk4ER4EeuNL_X3WyclGg" name="InProgress">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_kPffIER4EeuNL_X3WyclGg" name="InProgress" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_NIgIoC8zEeu1ReXrTnE8lw"/>
         </ownedRule>
         <trigger xmi:type="uml:Trigger" xmi:id="_aY2xMER4EeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
       </transition>
@@ -282,9 +282,13 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_K1IH8ERUEeuNL_X3WyclGg" name="getMenus" visibility="public">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_K1IH8URUEeuNL_X3WyclGg" type="_MGypUERCEeuNL_X3WyclGg" direction="return" effect="read"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_K1IH8URUEeuNL_X3WyclGg" type="_MGypUERCEeuNL_X3WyclGg" direction="return" effect="read">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_98VXIESAEeuNL_X3WyclGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_98iygESAEeuNL_X3WyclGg" value="*"/>
+        </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_K1IH8kRUEeuNL_X3WyclGg" name="restaurantID">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6ARKMESAEeuNL_X3WyclGg" value="*"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_L_CWUERUEeuNL_X3WyclGg" name="getOrdersReadyForPickup">
@@ -313,6 +317,9 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_WmKYIUR3EeuNL_X3WyclGg" name="orderID">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4rWwQESBEeuNL_X3WyclGg" name="addOrder" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_4rWwQUSBEeuNL_X3WyclGg" name="order" type="_5SSX8C6JEeuZ1olRHgeHYA"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_IAJLwEQ8EeuNL_X3WyclGg" name="RestaurantSystems &lt;&lt;Control>>">
@@ -393,9 +400,6 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VSSIoC8yEeu1ReXrTnE8lw" name="Order Status">
-      <ownedRule xmi:type="uml:Constraint" xmi:id="_gbnk4ER4EeuNL_X3WyclGg" name="InQueue">
-        <specification xmi:type="uml:InstanceValue" xmi:id="_kPffIER4EeuNL_X3WyclGg" name="InQueue" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_ITZa4C8zEeu1ReXrTnE8lw"/>
-      </ownedRule>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ITZa4C8zEeu1ReXrTnE8lw" name="InQueue">
         <specification xmi:type="uml:LiteralInteger" xmi:id="_MWMh8C8zEeu1ReXrTnE8lw"/>
       </ownedLiteral>
