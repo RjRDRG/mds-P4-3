@@ -2980,6 +2980,10 @@
               <element xmi:type="uml:Operation" href="collaborator2.uml#_GVaXAEQ2EeuNL_X3WyclGg"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_GVeocUQ2EeuNL_X3WyclGg"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_kkIYkERbEeuNL_X3WyclGg" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="collaborator2.uml#_kjUgQERbEeuNL_X3WyclGg"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_kkIYkURbEeuNL_X3WyclGg"/>
+            </children>
             <styles xmi:type="notation:TitleStyle" xmi:id="_V2oCMUPHEeunPY0pUk2aAw"/>
             <styles xmi:type="notation:SortingStyle" xmi:id="_V2oCMkPHEeunPY0pUk2aAw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_V2oCM0PHEeunPY0pUk2aAw"/>
@@ -2992,7 +2996,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V2oCOUPHEeunPY0pUk2aAw"/>
           </children>
           <element xmi:type="uml:Class" href="collaborator2.uml#_JvElYC6IEeuZ1olRHgeHYA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V2oCPUPHEeunPY0pUk2aAw" x="54" y="372" width="291" height="191"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V2oCPUPHEeunPY0pUk2aAw" x="54" y="352" width="291" height="211"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_xzQjwkREEeuNL_X3WyclGg"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xzQjw0REEeuNL_X3WyclGg"/>
@@ -3623,7 +3627,7 @@
       <element xmi:type="uml:Dependency" href="collaborator2.uml#_JxzfMERTEeuNL_X3WyclGg"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Jx17ckRTEeuNL_X3WyclGg" points="[880, 1620, -643984, -643984]$[1400, 1400, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JzVJMERTEeuNL_X3WyclGg" id="(1.0,0.1)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JzVJMURTEeuNL_X3WyclGg" id="(0.0,0.837696335078534)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JzVJMURTEeuNL_X3WyclGg" id="(0.0,0.8530805687203784)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_rqkwcERTEeuNL_X3WyclGg" type="Dependency_Edge" source="_V2naiUPHEeunPY0pUk2aAw" target="_V2k-UkPHEeunPY0pUk2aAw">
       <children xmi:type="notation:DecorationNode" xmi:id="_rqkwc0RTEeuNL_X3WyclGg" type="Dependency_NameLabel">

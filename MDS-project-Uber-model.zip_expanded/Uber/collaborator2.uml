@@ -654,7 +654,7 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_FXWfgC8-Eeu1ReXrTnE8lw" name="earnings" visibility="package" isUnique="false">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_KG3ioC8-Eeu1ReXrTnE8lw" name="rating" visibility="package" isUnique="false">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -665,6 +665,11 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GVaXAkQ2EeuNL_X3WyclGg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GVaXA0Q2EeuNL_X3WyclGg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kjUgQERbEeuNL_X3WyclGg" name="addEarnings">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tXOl4ERbEeuNL_X3WyclGg" name="earnings">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
