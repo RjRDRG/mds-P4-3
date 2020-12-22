@@ -3,8 +3,67 @@
   <packagedElement xmi:type="uml:Activity" xmi:id="_9QdIEA2XEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="__z8_kA2XEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_M_biYA2YEeujq4q3EywG0A" name="Interaction3"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="UberEats Order Status">
+    <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_OqzA4ERzEeuNL_X3WyclGg" source="_BVuzUERqEeuNL_X3WyclGg" target="_lO8SUERqEeuNL_X3WyclGg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_U6xxMERzEeuNL_X3WyclGg" name="addOrder" event="_UZ54wERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_V26pUERzEeuNL_X3WyclGg" guard="_5DV60ERzEeuNL_X3WyclGg" source="_lO8SUERqEeuNL_X3WyclGg" target="_O4l7YERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_5DV60ERzEeuNL_X3WyclGg" name="InProgress">
+          <specification xmi:type="uml:InstanceValue" xmi:id="__FH3EERzEeuNL_X3WyclGg" name="InProgress" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_NIgIoC8zEeu1ReXrTnE8lw"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_drUZwERzEeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_f2PZMERzEeuNL_X3WyclGg" guard="_L8ZEcER0EeuNL_X3WyclGg" source="_O4l7YERqEeuNL_X3WyclGg" target="_q7gMgERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_L8ZEcER0EeuNL_X3WyclGg" name="ReadyForPickUp">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_QA1xUER0EeuNL_X3WyclGg" name="ReadyForPickUp" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_XrZfoC8zEeu1ReXrTnE8lw"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_kWbm4ERzEeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_nz3XEERzEeuNL_X3WyclGg" guard="_Lzf8QER2EeuNL_X3WyclGg" source="_nA2U0ERqEeuNL_X3WyclGg" target="_9yJiYERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_Lzf8QER2EeuNL_X3WyclGg" name="PickedUp">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_P6GlQER2EeuNL_X3WyclGg" name="PickedUp" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_WkymgER0EeuNL_X3WyclGg"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_rtOOQERzEeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_uQ0MYERzEeuNL_X3WyclGg" guard="_TTMoAER2EeuNL_X3WyclGg" source="_q7gMgERqEeuNL_X3WyclGg" target="_nA2U0ERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_TTMoAER2EeuNL_X3WyclGg" name="InTransit">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_W8oM0ER2EeuNL_X3WyclGg" name="InTransit" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_a4DB0C8zEeu1ReXrTnE8lw"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_wg2VUERzEeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_xygxgERzEeuNL_X3WyclGg" guard="_c3hd8ER2EeuNL_X3WyclGg" source="_9yJiYERqEeuNL_X3WyclGg" target="_p4qPcERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_c3hd8ER2EeuNL_X3WyclGg" name="Delivered">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_gJT-0ER2EeuNL_X3WyclGg" name="Delivered" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_mNhFQC8zEeu1ReXrTnE8lw"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_1kIpAERzEeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_km6LgER2EeuNL_X3WyclGg" source="_p4qPcERqEeuNL_X3WyclGg" target="_hS9HcER2EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_waw-oER3EeuNL_X3WyclGg" source="_tfvX8ER3EeuNL_X3WyclGg" target="_owRNkER2EeuNL_X3WyclGg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_CD2VMER4EeuNL_X3WyclGg" name="cancelOrder" event="_Bo10MER4EeuNL_X3WyclGg"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_yGzpsER3EeuNL_X3WyclGg" source="_O4l7YERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_1KbywER3EeuNL_X3WyclGg" source="_q7gMgERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_3ESQUER3EeuNL_X3WyclGg" source="_nA2U0ERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5Ef0kER3EeuNL_X3WyclGg" source="_9yJiYERqEeuNL_X3WyclGg" target="_tfvX8ER3EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FQug4ER4EeuNL_X3WyclGg" source="_owRNkER2EeuNL_X3WyclGg" target="_hS9HcER2EeuNL_X3WyclGg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TTClEER4EeuNL_X3WyclGg" guard="_BW1owER5EeuNL_X3WyclGg" source="_tfvX8ER3EeuNL_X3WyclGg" target="_lO8SUERqEeuNL_X3WyclGg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_BW1owER5EeuNL_X3WyclGg" name="InQueue">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_FAG1gER5EeuNL_X3WyclGg" name="InQueue" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_ITZa4C8zEeu1ReXrTnE8lw"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_aY2xMER4EeuNL_X3WyclGg" name="updateOrder" event="_cSe-kERzEeuNL_X3WyclGg"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_BVuzUERqEeuNL_X3WyclGg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_O4l7YERqEeuNL_X3WyclGg" name="InProgress"/>
+      <subvertex xmi:type="uml:State" xmi:id="_lO8SUERqEeuNL_X3WyclGg" name="InQueue"/>
+      <subvertex xmi:type="uml:State" xmi:id="_nA2U0ERqEeuNL_X3WyclGg" name="InTransit"/>
+      <subvertex xmi:type="uml:State" xmi:id="_p4qPcERqEeuNL_X3WyclGg" name="Delivered"/>
+      <subvertex xmi:type="uml:State" xmi:id="_q7gMgERqEeuNL_X3WyclGg" name="ReadyForPickup"/>
+      <subvertex xmi:type="uml:State" xmi:id="_9yJiYERqEeuNL_X3WyclGg" name="PickedUp"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_hS9HcER2EeuNL_X3WyclGg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_owRNkER2EeuNL_X3WyclGg" name="Cancelled"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_tfvX8ER3EeuNL_X3WyclGg" kind="junction"/>
+    </region>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_R-A70BfWEeu4U_ooFJEV6A" name="UberEats">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_dZfgoBfWEeu4U_ooFJEV6A" name="Display promontion/annoucement"/>
@@ -250,6 +309,11 @@
         </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_yWs_UERVEeuNL_X3WyclGg" name="alert" type="_vKWCIC6KEeuZ1olRHgeHYA"/>
       </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WmKYIER3EeuNL_X3WyclGg" name="cancelOrder">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_WmKYIUR3EeuNL_X3WyclGg" name="orderID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_IAJLwEQ8EeuNL_X3WyclGg" name="RestaurantSystems &lt;&lt;Control>>">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_baxYcEQ8EeuNL_X3WyclGg" name="orders" visibility="private" type="_5SSX8C6JEeuZ1olRHgeHYA" isUnique="false">
@@ -257,7 +321,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_baxYckQ8EeuNL_X3WyclGg" value="*"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_eTKh4EQ8EeuNL_X3WyclGg" name="updateOrder" visibility="package">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_eTKh4UQ8EeuNL_X3WyclGg" name="id">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_eTKh4UQ8EeuNL_X3WyclGg" name="orderID">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_eTKh4kQ8EeuNL_X3WyclGg" name="status" type="_VSSIoC8yEeu1ReXrTnE8lw" isUnique="false" effect="update"/>
@@ -276,6 +340,11 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_X3HusERAEeuNL_X3WyclGg" name="restaurantID">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZInLwERAEeuNL_X3WyclGg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QGN5MER3EeuNL_X3WyclGg" name="cancelOrder" visibility="package">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_VLxdwER3EeuNL_X3WyclGg" name="orderID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
@@ -324,6 +393,9 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VSSIoC8yEeu1ReXrTnE8lw" name="Order Status">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_gbnk4ER4EeuNL_X3WyclGg" name="InQueue">
+        <specification xmi:type="uml:InstanceValue" xmi:id="_kPffIER4EeuNL_X3WyclGg" name="InQueue" type="_VSSIoC8yEeu1ReXrTnE8lw" instance="_ITZa4C8zEeu1ReXrTnE8lw"/>
+      </ownedRule>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ITZa4C8zEeu1ReXrTnE8lw" name="InQueue">
         <specification xmi:type="uml:LiteralInteger" xmi:id="_MWMh8C8zEeu1ReXrTnE8lw"/>
       </ownedLiteral>
@@ -339,6 +411,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mNhFQC8zEeu1ReXrTnE8lw" name="Delivered">
         <specification xmi:type="uml:LiteralInteger" xmi:id="_pbVFEC8zEeu1ReXrTnE8lw" value="4"/>
       </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WkymgER0EeuNL_X3WyclGg" name="PickedUp"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_01dAQC6JEeuZ1olRHgeHYA" name="Restaurant &lt;&lt;Persistent Entity>>">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Fal3MC8yEeu1ReXrTnE8lw" name="menuIDs" visibility="package" isUnique="false">
@@ -517,6 +590,9 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_lfGQMERUEeuNL_X3WyclGg" name="&lt;&lt;call>>" client="_vZcJgERAEeuNL_X3WyclGg" supplier="_-rBXMC6JEeuZ1olRHgeHYA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_sN2nMERUEeuNL_X3WyclGg" name="&lt;&lt;use>>" client="_vZcJgERAEeuNL_X3WyclGg" supplier="_MGypUERCEeuNL_X3WyclGg"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_XoDV8ERWEeuNL_X3WyclGg" name="&lt;&lt;call>" client="_vZcJgERAEeuNL_X3WyclGg" supplier="_MaEMAC6IEeuZ1olRHgeHYA"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_UZ54wERzEeuNL_X3WyclGg" name="addOrder" operation="_eTNlMEQ8EeuNL_X3WyclGg"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_cSe-kERzEeuNL_X3WyclGg" name="updateOrder" operation="_eTKh4EQ8EeuNL_X3WyclGg"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_Bo10MER4EeuNL_X3WyclGg" name="cancelOrder" operation="_QGN5MER3EeuNL_X3WyclGg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_xzOHgEREEeuNL_X3WyclGg" name="DeliverySubsystem">
     <packagedElement xmi:type="uml:Class" xmi:id="_StuQgC6KEeuZ1olRHgeHYA" name="Delivery &lt;&lt;Entity>>">
